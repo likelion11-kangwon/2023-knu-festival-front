@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+## 🌟 git 작업 방법
+### 1. clone
+로컬 저장소가 없을 시: `git clone 원격 레포지토리 URL`
+로컬 저장소가 이미 있을 시(최신 버전 동기화): `git pull origin main`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 2. branch
+`git branch 브랜치명`
+`git checkout 브랜치명`
+- mj: [@mango606](https://github.com/mango606)
+- hs: [@memorial0](https://github.com/memorial0)
+- sh: [@suno-boy](https://github.com/suno-boy)
 
-## Available Scripts
+### 3. 작업물 upload
+`git add .`
+`git commit -m "commit message"`
+`git push origin 브랜치명`
 
-In the project directory, you can run:
+### 4. run
+`npm install`
+`npm start`
 
-### `npm start`
+## 🌟 commit message rules
+- 예시: [feat] 게시판 기능 구현
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+|타입 이름|내용|
+|------|---|
+|feat|새로운 기능에 대한 커밋|
+|fix|버그 수정에 대한 커밋|
+|build|빌드 관련 파일 수정 / 모듈 설치 또는 삭제에 대한 커밋|
+|chore|그 외 자잘한 수정에 대한 커밋|
+|ci|ci 관련 설정 수정에 대한 커밋|
+|docs|문서 수정에 대한 커밋|
+|style|코드 스타일 혹은 포맷 등에 관한 커밋|
+|refactor|코드 리팩토링에 대한 커밋|
+|test|테스트 코드 수정에 대한 커밋|
+|perf|성능 개선에 대한 커밋|
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🌟 directory structure
+📁 public
+- data (mock data 관리)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📁 src
+- assets (이미지, 폰트 등의 미디어 파일 저장)
+- components (공용 컴포넌트, 즉 Header 등 재사용하는 컴포넌트 관리)
+- pages (페이지 단위의 컴포넌트 폴더 관리)
+- styles (공용 css, 즉 재사용하는 스타일 관리)
