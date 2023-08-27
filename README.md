@@ -1,10 +1,12 @@
 ## 🌟 git 작업 방법
 ### 1. clone
 로컬 저장소가 없을 시: `git clone 원격 레포지토리 URL`
+
 로컬 저장소가 이미 있을 시(최신 버전 동기화): `git pull origin main`
 
 ### 2. branch
 `git branch 브랜치명`
+
 `git checkout 브랜치명`
 - mj: [@mango606](https://github.com/mango606)
 - hs: [@memorial0](https://github.com/memorial0)
@@ -12,11 +14,14 @@
 
 ### 3. 작업물 upload
 `git add .`
+
 `git commit -m "commit message"`
+
 `git push origin 브랜치명`
 
 ### 4. run
 `npm install`
+
 `npm start`
 
 ## 🌟 commit message rules
