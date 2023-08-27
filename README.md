@@ -1,10 +1,15 @@
+## 👩‍👦‍🧒 frontend team
+|손민주|심현수|권순호|
+|---|---|---|
+|`메뉴바` `방명록`|`함인섭광장`|`60주념 기념관`|
+
 ## 🌟 git 작업 방법
 ### 1. clone
 로컬 저장소가 없을 시: `git clone 원격 레포지토리 URL`
 
 로컬 저장소가 이미 있을 시(최신 버전 동기화): `git pull origin main`
 
-### 2. branch
+### 2. branch 작업
 `git branch 브랜치명`
 
 `git checkout 브랜치명`
@@ -19,7 +24,7 @@
 
 `git push origin 브랜치명`
 
-### 4. run
+### 4. 작업물 run
 `npm install`
 
 `npm start`
