@@ -1,0 +1,20 @@
+.sixth {
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.truck {
+  border: 1px solid white;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.modal {
+    margin: auto;
+    padding: 2rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: #817f7f;
+    opacity: 0.8;
+}
