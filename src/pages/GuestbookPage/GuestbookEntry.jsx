@@ -1,21 +1,6 @@
 import React from 'react';
-import axios from 'axios';
-
-const images = [
-  './IoIosPeople.png',
-  './IoIosPerson.png',
-  './IoIosPersonAdd.png',
-  './IoMdPerson.png'
-];
-
-function getRandomImage(images) {
-  const randomIndex = Math.floor(Math.random() * images.length);
-  return images[randomIndex];
-}
 
 function GuestbookEntry({ entry }) {
-  const imageUrl = getRandomImage(images);
-
   return (
     <div className="guestbook-entry">
       <div className="entry-info">
