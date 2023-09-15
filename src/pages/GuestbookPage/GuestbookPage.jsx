@@ -17,7 +17,7 @@ const GuestbookPage = () => {
   useEffect(() => {
     const fetchGuestbookEntries = async () => {
       try {
-        const response = await axios.get('http://49.50.172.190:8080/api/guestbook/pageList');
+        const response = await axios.get('/api/guestbook/pageList');
         setEntries(response.data.content);
       } catch (error) {
         console.error('API 호출 중 오류 발생:', error);
@@ -48,7 +48,7 @@ const GuestbookPage = () => {
     };
 
     try {
-      const response = await axios.post('http://49.50.172.190:8080/api/guestbook/register', data);
+      const response = await axios.post('/api/guestbook/register', data);
 
       setEntries([...entries, response.data]);
 

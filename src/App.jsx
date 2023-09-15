@@ -10,6 +10,7 @@ import HamInseobPage from './pages/HamInseobPage/HamInseobPage';
 import GuestbookPage from './pages/GuestbookPage/GuestbookPage';
 import NoticePage from './pages/NoticePage/NoticePage';
 import PerformancesPage from './pages/PerformancesPage/PerformancesPage';
+import IntroPage from './pages/Intro/Intro';
 
 const App = () => {
   const [circles, setCircles] = useState([]);
@@ -98,11 +99,12 @@ const App = () => {
       <Routes>
         <Route path='/' element={<HomePage />} />  {/* 홈 */}
         <Route path='/stadium' element={<StadiumPage />} />  {/* 대운동장 */}
-        <Route path='/60th' element={<SixtiethPage />} />  {/* 60주념 기념관 */}
+        <Route path='/60th' element={<SixtiethPage />} />  {/* 60주념기념관 */}
         <Route path='/haminseob' element={<HamInseobPage />} />  {/* 함인섭광장 */}
         <Route path='/performance' element={<PerformancesPage />} />  {/* 공연 */}
         <Route path='/guestbook' element={<GuestbookPage />} />  {/* 방명록 */}
         <Route path='/notice' element={<NoticePage />} />  {/* 공지사항 */}
+        <Route path='/intro' element={<IntroPage />} />  {/* 개발자 소개 */}
       </Routes>
     </div>
   );

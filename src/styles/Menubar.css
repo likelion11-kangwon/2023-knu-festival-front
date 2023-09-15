@@ -17,11 +17,12 @@
     background-color:rgba(255, 255, 255, 0.12); /* 메뉴바가 열릴 때 배경을 반투명한 흰색으로 변경 */
     padding: 1rem 3rem 1rem 1rem;
 }
-  
-.menu-icon {
+
+.menu-icon-box {
+    display: flex;
     position: fixed;
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
     top: 1rem;
     right: 1rem;
     font-size: 1.6rem;
@@ -29,16 +30,10 @@
     background-color: rgb(255, 255, 255, 0.12);
     border-radius: 6px;
     color: white;
-}
-
-.menu-icon-box {
-    display: flex;
-    align-content: center;
+    
+    align-items: center;
     justify-content: center;
-}
-
-.menu-icon-box svg {
-    margin-top: 0.2rem;
+    
 }
 
 .categories {

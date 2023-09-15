@@ -6,12 +6,13 @@
 .centered-date {
     position: absolute;
     margin-top: -3.2rem;
-    width: 3.6rem;
+    width: 4rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
     background-color: rgb(255, 255, 255, 0.12);
-    padding: 0.4rem;
+    padding: 0.4rem 0.5rem;
     border-radius: 30px;
 }
 
@@ -40,12 +41,11 @@
 }
 
 .page-list li {
-  opacity: 0;
   margin-bottom: 26px;
 }
 
 .page-list a {
-  color: #E8E9EB; /* 링크의 색상을 검은색으로 설정 */
+  color: #E8E9EB;
   text-decoration: none; /* 링크의 밑줄 제거 */
   font-size: 1.2rem;
 }
@@ -67,8 +67,12 @@
   }
 }
 
-.page-list li.fade-in {
+.fade-in {
   animation: fadeInUp 0.5s forwards;
+}
+
+.fade-item {
+  opacity: 0;
 }
 
 @media (min-width: 480px) {
@@ -101,8 +105,8 @@
 
 @media (min-width: 1020px) {
   .sub-txt {
-    padding-top: 16.9rem;
-    padding-right: 26%;
+    padding-top: 16.7rem;
+    padding-right: 29%;
   }
 
   .page-list {
@@ -113,11 +117,97 @@
   }
 }
 
-.copyright {
+/* 페이지 리스트 아래 내용 */
+.centered-map {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  
+  margin-top: 9.6rem;
+  margin-bottom: -32rem;
+}
+
+.map-txt {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: -1.4rem;
+}
+
+.centered-home {
+  width: 100%;
+  height: 62rem;
+
+  display: flex;
+  justify-items: flex-end;
+  justify-content: flex-end	;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.about-makers {
+  width: 12rem;
+  height: 2.4rem;
+  color: #8A61BF;
+  font-size: 1.6rem;
+  background-color: white;
+  border-radius: 29px;
+  padding: 0.1rem 0.2rem;
+
   display: flex;
   justify-content: center;
-  color: #9CA3A9;
+  align-items: center;
+}
+
+.likelion-btn {
+  color: white;
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+  margin: 1rem;
+  margin-right: -0.14rem;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.bottom-logo {
+  margin-top: 3.2rem;
+}
+
+.copyright {
+  color: #E8E9EB;
   font-size: 0.8rem;
-  margin-top: 8rem;
-  margin-bottom: 2rem;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1020px) {
+  .map {
+    width: 40%;
+  }
+}
+
+/* 상단 이동 버튼 */
+.go-top-btn {
+  display: flex;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.24);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
 }

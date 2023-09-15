@@ -12,10 +12,8 @@ const Menubar = () => {
 
   return (
     <div className={`menubar ${menuOpen ? 'open' : ''}`}>
-      <div className="menu-icon" onClick={toggleMenu}>
-        <div className="menu-icon-box">
-          {menuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt4 />}
-        </div>
+      <div className="menu-icon-box" onClick={toggleMenu}>
+        {menuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt4 />}
       </div>
       <div className={`categories ${menuOpen ? 'visible' : ''}`}>
         <ul className="category-list" style={{ fontFamily: 'Pretendard', fontWeight: 'bold', fontSize: '1.2rem' }}>
