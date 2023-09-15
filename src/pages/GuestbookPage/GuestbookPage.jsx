@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import Menubar from '../../components/Menubar';
 import './GuestbookPage.css';
 import GuestbookEntry from './GuestbookEntry';
@@ -7,17 +6,20 @@ import Modal from 'react-modal';
 import { IoIosClose } from 'react-icons/io';
 import { IoIosAdd } from 'react-icons/io';
 import { IoIosArrowRoundUp } from 'react-icons/io';
+import { useAxios } from "../../libs/axios";
 
 const GuestbookPage = () => {
   const [entries, setEntries] = useState([]);
   const [nickname, setNickname] = useState('');
   const [content, setContent] = useState('');
   const [modalIsOpen, setModalIsOpen] = useState(false); // 모달 열림 상태 추가
+  
+  const axios = useAxios();
 
   useEffect(() => {
     const fetchGuestbookEntries = async () => {
       try {
-        const response = await axios.get('/api/guestbook/pageList');
+        const response = await axios.get('http://49.50.172.190:8080/api/guestbook/pageList');
         setEntries(response.data.content);
       } catch (error) {
         console.error('API 호출 중 오류 발생:', error);
@@ -48,7 +50,7 @@ const GuestbookPage = () => {
     };
 
     try {
-      const response = await axios.post('/api/guestbook/register', data);
+      const response = await axios.post('http://49.50.172.190:8080/api/guestbook/register', data);
 
       setEntries([...entries, response.data]);
 

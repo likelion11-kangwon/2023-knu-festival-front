@@ -1,18 +1,19 @@
 // 공지사항
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import Menubar from '../../components/Menubar';
 import './NoticePage.css';
 import Modal from 'react-modal';
+import { useAxios } from '../../libs/axios';
 
 const NoticePage = () => {
   const [notices, setNotices] = useState([]);
   const [selectedNotice, setSelectedNotice] = useState(null);
+  const axios = useAxios();
 
   useEffect(() => {
     const fetchNoticeList = async () => {
       try {
-        const response = await axios.get('/api/notice/list');
+        const response = await axios.get('http://49.50.172.190:8080/api/notice/list');
         setNotices(response.data.content);
       } catch (error) {
         console.error('API 호출 중 오류 발생:', error);
