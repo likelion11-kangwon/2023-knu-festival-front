@@ -1,0 +1,123 @@
+.centered-img {
+    display: flex;
+    justify-content: center;
+  }
+
+.centered-date {
+    position: absolute;
+    margin-top: -3.2rem;
+    width: 3.6rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(255, 255, 255, 0.12);
+    padding: 0.4rem;
+    border-radius: 30px;
+}
+
+.title {
+  margin-top: 2.2rem;
+}
+
+.sub-title {
+  margin-top: -9.4rem;
+}
+
+.home-page {
+  margin-top: 2.4rem;
+}
+
+.sub-txt {
+  padding-top: 16.9rem;
+  padding-right: 2%;
+}
+
+.page-list {
+  list-style: none;
+  width: 14rem;
+  padding: 9.6rem 1rem 0 12%;
+  margin: 0;
+}
+
+.page-list li {
+  opacity: 0;
+  margin-bottom: 26px;
+}
+
+.page-list a {
+  color: #E8E9EB; /* 링크의 색상을 검은색으로 설정 */
+  text-decoration: none; /* 링크의 밑줄 제거 */
+  font-size: 1.2rem;
+}
+
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-list li.fade-in {
+  animation: fadeInUp 0.5s forwards;
+}
+
+@media (min-width: 480px) {
+  .sub-txt {
+    padding-top: 16.9rem;
+    padding-right: 14%;
+  }
+
+  .page-list {
+    list-style: none;
+    width: 14rem;
+    padding: 9.6rem 1rem 0 22%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 820px) {
+  .sub-txt {
+    padding-top: 16.9rem;
+    padding-right: 22%;
+  }
+
+  .page-list {
+    list-style: none;
+    width: 14rem;
+    padding: 9.6rem 1rem 0 30%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1020px) {
+  .sub-txt {
+    padding-top: 16.9rem;
+    padding-right: 26%;
+  }
+
+  .page-list {
+    list-style: none;
+    width: 14rem;
+    padding: 9.6rem 1rem 0 32%;
+    margin: 0;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  color: #9CA3A9;
+  font-size: 0.8rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}

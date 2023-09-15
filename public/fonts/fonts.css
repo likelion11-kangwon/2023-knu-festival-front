@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Pretendard'; /* 원하는 글꼴 이름 지정 */
+    src: url('./Pretendard-Regular.woff2') format('woff2'); /* 글꼴 파일 경로와 형식 지정 */
+    font-weight: normal; /* 글꼴 무게 지정 (normal, bold, 등) */
+    font-style: normal; /* 글꼴 스타일 지정 (normal, italic, 등) */
+  }
+
+@font-face {
+    font-family: 'Pretendard-Bold'; /* 원하는 글꼴 이름 지정 */
+    src: url('./Pretendard-Bold.woff2') format('woff2'); /* 글꼴 파일 경로와 형식 지정 */
+    font-weight: bold; /* 글꼴 무게 지정 (normal, bold, 등) */
+    font-style: normal; /* 글꼴 스타일 지정 (normal, italic, 등) */
+  }
+
+@font-face {
+    font-family: 'Pretendard-ExtraBold'; /* 원하는 글꼴 이름 지정 */
+    src: url('./Pretendard-ExtraBold.woff2') format('woff2'); /* 글꼴 파일 경로와 형식 지정 */
+    font-weight: 800; /* 글꼴 무게 지정 (normal, bold, 등) */
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Pretendard-Medium'; /* 원하는 글꼴 이름 지정 */
+    src: url('./Pretendard-Medium.woff2') format('woff2'); /* 글꼴 파일 경로와 형식 지정 */
+    font-weight: 500; /* 글꼴 무게 지정 (normal, bold, 등) */
+    font-style: normal; /* 글꼴 스타일 지정 (normal, italic, 등) */
+  }

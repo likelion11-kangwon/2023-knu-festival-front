@@ -1,0 +1,154 @@
+/* 방명록 기본 화면 */
+.page-title {
+  color: white;
+  background-color: rgb(255, 255, 255, 0.12);
+  padding: 0.4rem;
+  margin-left: 1rem;
+  border-radius: 6px;
+
+  font-family: 'Pretendard-Bold';
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.guestbook-container {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 7rem;
+  padding-top: 1.8rem;
+  padding-bottom: 0.8rem;
+  z-index: 100;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.centered-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 92%;
+  height: 3.6rem;
+
+  background-color: #8A61BF;
+  border: 0;
+  border-radius: 20px;
+
+  font-size: 1rem;
+  color: white;
+
+  margin-top: 2.5rem;
+}
+
+.plus-icon {
+  margin-right: 0.2rem; /* 아이콘과 텍스트 사이 간격 조절 */
+  font-size: 2.2rem;
+  color: white;
+}
+
+/* 방명록 내용 리스트 */
+.entries {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  max-height: calc(100vh - 7rem);
+}
+.guestbook-entry {  
+  width: 82%;
+  height: auto;
+  background-color: #ffffff1f;
+  margin-top: 1rem;
+  padding: 1rem 5% 1rem 5%;
+  border-radius: 20px;
+  color: white;
+}
+
+.entry-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entry-nickname {
+  font-family: 'Pretendard-Bold';
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.entry-date {
+  font-family: 'Pretendard-Medium';
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #9CA3A9;
+}
+.entry-content {
+  font-family: 'Pretendard';
+  font-weight: normal;
+  font-size: 1rem;
+  color: #E8E9EB;
+  margin-top: 0.4rem;
+}
+
+/* 모달 스타일 */
+.custom-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%; /* 모달의 가로 너비 조정 */
+    max-width: 100vw; /* 모달의 최대 가로 너비 조정 */
+    height: 100%; /* 모달의 세로 높이 조정 */
+    max-height: 100vh; /* 모달의 최대 세로 높이 조정 */
+    background-color: rgb(255, 255, 255, 0.12);
+    padding: 0;
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 표시 */
+  }
+
+  .write-title {
+    color: white;
+    padding: 0.4rem;
+    margin-left: 1rem;
+    border-radius: 6px;
+  
+    font-family: 'Pretendard-Bold';
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .custom-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* 배경 색상 및 투명도 조정 */
+  }
+
+  /* 모달창 닫기 버튼 */
+  .close-icon {
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.12);
+    border-radius: 6px;
+    color: white;
+    z-index: 500;
+}
+
+.close-icon-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.close-icon-box svg {
+    margin-top: 0.2rem;
+}

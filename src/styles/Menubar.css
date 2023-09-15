@@ -5,26 +5,40 @@
     width: 33%;
     height: 100%;
     background-color: transparent; /* 배경을 투명하게 설정 */
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     transition: right 0.3s, background-color 0.3s; /* 배경 색상 변경에 대한 트랜지션 추가 */
+    z-index: 200;
 }
   
 .menubar.open {
     right: 0;
-    color: black;
-    background-color:rgba(255, 255, 255, 0.6); /* 메뉴바가 열릴 때 배경을 반투명한 흰색으로 변경 */
-    padding: 40px;
+    background-color:rgba(255, 255, 255, 0.12); /* 메뉴바가 열릴 때 배경을 반투명한 흰색으로 변경 */
+    padding: 1rem 3rem 1rem 1rem;
 }
   
 .menu-icon {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
+    width: 2rem;
+    height: 2rem;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.6rem;
     cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.12);
+    border-radius: 6px;
+    color: white;
+}
+
+.menu-icon-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.menu-icon-box svg {
+    margin-top: 0.2rem;
 }
 
 .categories {
@@ -37,20 +51,21 @@
   
 .category-list {
     list-style: none;
-    padding: 0;
+    width: 38rem;
+    padding: 3.2rem 0 0 0;
     margin: 0;
-    font-size: 20px;
 }
   
 .category-list li {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
 .category-list a {
-    color: black; /* 링크의 색상을 검은색으로 설정 */
+    color: white; /* 링크의 색상을 검은색으로 설정 */
     text-decoration: none; /* 링크의 밑줄 제거 */
+    font-size: 1rem;
 }
 
 .category-list a:hover {
-    color: blue;
+    font-size: 1.1rem;
 }

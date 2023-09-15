@@ -1,4 +1,5 @@
-// 공연import React from 'react';
+// 공연
+import React from 'react';
 import Menubar from '../../components/Menubar';
 import './PerformancesPage.css';
 

@@ -1,0 +1,54 @@
+.notice-board {
+    color: white;
+}
+
+.notice-board li {
+    list-style: none;
+}
+
+.notice-container {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 2.6rem;
+    padding-top: 1.8rem;
+    padding-bottom: 0.8rem;
+    z-index: 100;
+  }
+
+/* 모달 스타일 */
+.custom-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%; /* 모달의 가로 너비 조정 */
+    max-width: 100vw; /* 모달의 최대 가로 너비 조정 */
+    height: 100%; /* 모달의 세로 높이 조정 */
+    max-height: 100vh; /* 모달의 최대 세로 높이 조정 */
+    background-color: rgb(255, 255, 255, 0.12);
+    padding: 0;
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 표시 */
+  }
+
+  .notice-title {
+    color: white;
+    padding: 0.4rem;
+    margin-left: 1rem;
+    border-radius: 6px;
+  
+    font-family: 'Pretendard-Bold';
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .custom-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* 배경 색상 및 투명도 조정 */
+  }
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+}
