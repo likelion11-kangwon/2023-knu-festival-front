@@ -51,7 +51,6 @@ const GuestbookPage = () => {
 
     try {
       const response = await axios.post('/api/guestbook/register', data);
-
       setEntries([...entries, response.data]);
 
       setNickname('');

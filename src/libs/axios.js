@@ -16,7 +16,9 @@ export function useAxios() {
 
 export const AxiosProvider = ({ children }) => {
   return (
-    <axiosContext.Provider value={new Axios({ baseURL })}>
+    <axiosContext.Provider
+      value={new Axios({ baseURL, transformResponse: JSON.parse })}
+    >
       {children}
     </axiosContext.Provider>
   );
