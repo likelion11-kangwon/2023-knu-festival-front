@@ -216,9 +216,7 @@ const GuestbookPage = () => {
             style={{ fontFamily: 'Pretendard', fontWeight: 'normal' }}
           />
           </div>
-          { false && (  // 중요!!!
           <button className="submit" type="submit" disabled={isSubmitDisabled} style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1rem'}}>방명록 업로드 <IoIosArrowRoundUp size="1.6rem"/></button>
-          )}
         </form>
       </Modal>
     </article>
