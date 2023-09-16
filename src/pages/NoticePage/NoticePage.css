@@ -156,12 +156,20 @@
   font-weight: bold;
 }
 
+.markdown-box {
+  width: 100vw;
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+}
+
 .react-markdown {
-  padding: 0.8rem;
+  padding: 1rem;
   background-color: rgb(255, 255, 255, 0.12);
   border-radius: 20px;
 
-  width: auto;
+  width: 100%;
   height: auto;
   overflow-y: scroll;
   margin: 1.4rem;

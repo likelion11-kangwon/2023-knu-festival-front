@@ -21,7 +21,7 @@ const NoticePage = () => {
   useEffect(() => {
     const fetchNoticeList = async () => {
       try {
-        const response = await axios.get('/api/list/notices');
+        const response = await axios.get('http://49.50.172.190:8080/api/list/notices');
         setNotices(response.data.content);
       } catch (error) {
         console.error('API 호출 중 오류 발생:', error);
@@ -131,13 +131,14 @@ const NoticePage = () => {
             <p className="notice-title">{selectedNotice.title}</p>
             <p className="notice-date" style={{ fontFamily: 'Pretendard-Medium', fontWeight: '500', fontSize: '1rem', color: '#9CA3A9' }}>{formatDate(selectedNotice.createDate)}</p>
             {/* 공지사항 내용을 ReactMarkdown으로 랜더링 */}
+            <div className='markdown-box'>
             <ReactMarkdown 
               className="react-markdown"
               children={selectedNotice.content} 
               allowDangerousHtml={true} 
               rehypePlugins={[rehypeSanitize]}
               style={{ fontFamily: 'Pretendard', fontWeight: 'normal', fontSize: '1rem', color: '#E8E9EB' }}
-          />
+          /></div>
           <div className="notice-btn">
             <button className="before-btn" onClick={prevNotice} style={{ fontFamily: 'Pretendard', fontWeight: 'normal', fontSize: '1rem', color: 'white'}}><IoIosArrowBack /> 이전글</button>
             <button className="next-btn" onClick={nextNotice} style={{ fontFamily: 'Pretendard', fontWeight: 'normal', fontSize: '1rem', color: 'white'}}>다음글 <IoIosArrowForward /></button>
