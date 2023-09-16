@@ -14,7 +14,7 @@ const NoticePage = () => {
   useEffect(() => {
     const fetchNoticeList = async () => {
       try {
-        const response = await axios.get('http://49.50.172.190:8080/api/notice/list');
+        const response = await axios.get('http://49.50.172.190:8080/api/notices');
         setNotices(response.data.content);
       } catch (error) {
         console.error('API 호출 중 오류 발생:', error);
