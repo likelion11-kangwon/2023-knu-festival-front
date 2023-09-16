@@ -79,43 +79,40 @@ const HomePage = () => {
   // 하단에 애니메이션 적용
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-            } else {
-                entry.target.classList.remove('fade-in');
-            }
-        });
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target); // 관찰 중지
+        }
+      });
     }, {
-        threshold: 1.0
+      threshold: 1.0
     });
-
-    // map 클래스에 애니메이션 적용
+  
     const mapObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in');
-        } else {
-          entry.target.classList.remove('fade-in');
+          mapObserver.unobserve(entry.target); // 관찰 중지
         }
       });
     }, {
       threshold: 0.15
     });
-
+  
     if (listRef.current) {
       const listItems = listRef.current.querySelectorAll('.fade-item:not(.map)');
       listItems.forEach(item => observer.observe(item));
-
+  
       const mapItems = listRef.current.querySelectorAll('.map');
       mapItems.forEach(item => mapObserver.observe(item));
     }
-
+  
     return () => {
       if (listRef.current) {
         const listItems = listRef.current.querySelectorAll('.fade-item:not(.map)');
         listItems.forEach(item => observer.unobserve(item));
-
+  
         const mapItems = listRef.current.querySelectorAll('.map');
         mapItems.forEach(item => mapObserver.unobserve(item));
       }
