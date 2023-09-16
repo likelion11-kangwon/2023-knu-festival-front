@@ -42,3 +42,16 @@
     margin-top: 0.1rem;
     margin-bottom: -10rem;
   }
+
+  /* 페이지 타이틀 */
+  .page-title {
+    color: white;
+    background-color: rgb(255, 255, 255, 0.12);
+    padding: 0.4rem;
+    margin-left: 1rem;
+    border-radius: 6px;
+  
+    font-family: 'Pretendard-Bold';
+    font-weight: bold;
+    font-size: 1.2rem;
+  }

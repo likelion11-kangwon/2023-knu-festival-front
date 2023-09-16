@@ -3,7 +3,8 @@ import Menubar from '../../components/Menubar';
 import './GuestbookPage.css';
 import GuestbookEntry from './GuestbookEntry';
 import Modal from 'react-modal';
-import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
+import { HiOutlineChevronRight } from 'react-icons/hi';
+import { HiOutlineX } from 'react-icons/hi';
 import { IoIosAdd } from 'react-icons/io';
 import { IoIosArrowRoundUp } from 'react-icons/io';
 import { useAxios } from "../../libs/axios";
@@ -57,7 +58,7 @@ const GuestbookPage = () => {
       <div className="pagination" style={{ fontFamily: 'Pretendard-Bold'}}>
         {firstVisiblePage > 0 && (
           <button onClick={() => setCurrentPage(firstVisiblePage - 1)}>
-            <HiOutlineChevronLeft />
+            <HiOutlineX />
           </button>
         )}
   
@@ -189,7 +190,7 @@ const GuestbookPage = () => {
         </div>
         <div className="close-icon">
           <div className="close-icon-box">
-            <HiOutlineChevronLeft onClick={() => setModalIsOpen(false)} />
+            <HiOutlineX onClick={() => setModalIsOpen(false)} />
           </div>
         </div>
         <form className="write-form" onSubmit={handleSubmit}>

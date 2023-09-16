@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { HiOutlineMenuAlt4, HiOutlineX } from 'react-icons/hi';
+import { HiOutlineMenuAlt4 } from 'react-icons/hi';
+import { HiOutlineChevronLeft } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import '../styles/Menubar.css'; // 스타일링을 위한 CSS 파일
 
@@ -11,9 +12,11 @@ const Menubar = () => {
   };
 
   return (
+    <>
+    {menuOpen && <div className="blur-layer"></div>}
     <div className={`menubar ${menuOpen ? 'open' : ''}`}>
       <div className="menu-icon-box" onClick={toggleMenu}>
-        {menuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt4 />}
+        {menuOpen ? <HiOutlineChevronLeft /> : <HiOutlineMenuAlt4 />}
       </div>
       <div className={`categories ${menuOpen ? 'visible' : ''}`}>
         <ul className="category-list" style={{ fontFamily: 'Pretendard', fontWeight: 'bold', fontSize: '1.2rem' }}>
@@ -27,6 +30,7 @@ const Menubar = () => {
         </ul>
       </div>
     </div>
+    </>
   );
 };
 

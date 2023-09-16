@@ -38,17 +38,17 @@ const calculateDateDifference = (targetDate) => {
 };
 
 const HomePage = () => {
-  // useEffect(() => {
-  //   if (!isMobile()) {
-  //     alert('이 페이지는 모바일 접속을 권장합니다.');
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (!isMobile()) {
+      alert('이 페이지는 모바일 접속을 권장합니다.');
+    }
+  }, []);
 
-  // const isMobile = () => {
-  //   // 모바일 기기 정의
-  //   const mobileKeywords = ['Android', 'iPhone', 'iPod', 'iPad', 'Windows Phone', 'Blackberry'];
-  //   return mobileKeywords.some(keyword => window.navigator.userAgent.includes(keyword));
-  // };
+  const isMobile = () => {
+    // 모바일 기기 정의
+    const mobileKeywords = ['Android', 'iPhone', 'iPod', 'iPad', 'Windows Phone', 'Blackberry'];
+    return mobileKeywords.some(keyword => window.navigator.userAgent.includes(keyword));
+  };
 
   const targetDate = new Date(2023, 8, 19, 23, 59, 59); // 월-1
   const dateDifference = calculateDateDifference(targetDate);

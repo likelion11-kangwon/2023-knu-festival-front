@@ -1,40 +1,83 @@
 .notice-board {
-    color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .notice-board li {
     list-style: none;
+    color: white;
 }
 
-.notice-container {
-    position: sticky;
-    top: 0;
-    width: 100vw;
-    height: 2.6rem;
-    padding-top: 1.8rem;
-    padding-bottom: 0.8rem;
-    z-index: 100;
-  }
+.entries {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  max-height: calc(100vh - 32vh);
+}
 
-/* 모달 스타일 */
-.custom-modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    width: 100%; /* 모달의 가로 너비 조정 */
-    max-width: 100vw; /* 모달의 최대 가로 너비 조정 */
-    height: 100%; /* 모달의 세로 높이 조정 */
-    max-height: 100vh; /* 모달의 최대 세로 높이 조정 */
-    background-color: rgb(255, 255, 255, 0.12);
-    padding: 0;
-    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 표시 */
-  }
+.guestbook-entry {  
+  width: 82%;
+  height: auto;
+  background-color: #ffffff1f;
+  margin-top: 1rem;
+  padding: 1rem 5% 1rem 5%;
+  border-radius: 20px;
+  color: white;
+}
 
-  .notice-title {
+.entry-notice-info {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: auto;
+}
+
+.entry-notice-title {
+  height: auto;
+  display: flex;
+  justify-content: left;
+  margin: 0.2rem 0 0.4rem 0;
+}
+
+.entry-notice-date {
+  display: flex;
+  justify-content: left;
+  margin: 0.2rem 0;
+}
+
+.category {
+  margin-left: 5%;
+  width: 90%;
+  text-align: center;  /* 버튼들을 수평 중앙에 배치 */
+  background-color: rgb(255, 255, 255, 0.12);
+  border-radius: 40px;
+  padding: 0.44rem 0;
+}
+
+.category button {
+  display: inline-block; /* 각 버튼을 inline-block 요소로 만들어서 줄바꿈 없이 나열될 수 있게 합니다. */
+  margin: 0 0.2rem; /* 버튼 간 간격 (선택 사항) */
+  padding: 0.2rem 1.9rem;
+  background: none;
+  border-radius: 40px;
+  border: none;
+  color: white;
+}
+
+.category .active {
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 0.2rem 0;
+  background-color: rgb(255, 255, 255, 0.12);
+}
+
+  .notice-header {
     color: white;
+    background-color: rgb(255, 255, 255, 0.12);
     padding: 0.4rem;
     margin-left: 1rem;
     border-radius: 6px;
@@ -43,12 +86,131 @@
     font-weight: bold;
     font-size: 1.2rem;
   }
+
+  .notice-container {
+    width: 100vw;
+    height: 4rem;
+    padding-top: 2rem;
+  }
+  
+  .blur-box {
+    position: fixed; /* 상단에 고정 */
+    top: 0; /* 상단에서 0px 위치 */
+    left: 0; /* 왼쪽에서 0px 위치 */
+    width: 100%; /* 화면 너비 전체 차지 */
+    height: 4rem; /* 박스 높이. 원하는 높이로 조정 가능 */
+    background-color: rgba(255, 255, 255, 0); /* 반투명한 백그라운드 */
+    filter: blur(5px); /* 블러 효과 적용. 원하는 블러 크기로 조정 가능 */
+    z-index: 500; /* 다른 요소 위에 나타나게 하려면 높은 z-index 값을 설정 */
+}
+
+/* 모달 스타일 */
+.custom-modal-notice {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
   
   .custom-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* 배경 색상 및 투명도 조정 */
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .hidden {
     opacity: 0;
     pointer-events: none;
+}
+
+.notice-box {
+  width: 90vw;
+  height: 100%;
+}
+
+.notice-title {
+  width: 100%;
+  margin-top: 6rem;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+  margin-left: 0.6rem;
+
+  font-family: 'Pretendard-Bold';
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.notice-date {
+  margin: 1rem 0 2rem 0.6rem;
+  border-radius: 6px;
+  font-family: 'Pretendard-Bold';
+  font-weight: bold;
+}
+
+.react-markdown {
+  padding: 0.8rem;
+  background-color: rgb(255, 255, 255, 0.12);
+  border-radius: 20px;
+
+  width: auto;
+  height: auto;
+  overflow-y: scroll;
+  margin: 1.4rem;
+}
+
+.react-markdown img {
+  display: inline-block;  /* 이미지가 inline 요소로 설정되어 있기 때문에 inline-block으로 변경합니다. */
+  margin: auto;  /* 이미지를 수직 중앙에 배치하기 위한 설정 (선택 사항) */
+  max-width: 100%;  /* 이미지가 너무 크면 부모 요소의 너비를 넘지 않게 설정 */
+}
+
+.react-markdown a {
+  background-image: linear-gradient(to left, #CC39A3, #DA4186, #F04C5A, #FF593F, #FF7143, #FFA24B, #FFD654, #FFD654);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; /* 텍스트 그라데이션 설정 */
+  -webkit-text-fill-color: transparent;
+
+  font-weight: bold;
+}
+
+.notice-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0 1rem 0 1rem;
+}
+
+.before-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  border: none;
+}
+
+.next-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  border: none;
+}
+
+@media (min-width: 1020px) {
+  .react-markdown img {
+    max-width: 50vw;
+    height: auto; /* 비율 유지 */
+  }
 }

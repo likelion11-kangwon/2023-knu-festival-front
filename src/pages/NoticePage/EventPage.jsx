@@ -11,17 +11,17 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import ReactMarkdown from 'react-markdown';
 import rehypeSanitize from 'rehype-sanitize';
 
-const NoticePage = () => {
+const EventPage = () => {
   const [notices, setNotices] = useState([]);
   const [selectedNotice, setSelectedNotice] = useState(null);
   const location = useLocation();
-  
+
   const axios = useAxios();
 
   useEffect(() => {
     const fetchNoticeList = async () => {
       try {
-        const response = await axios.get('/api/list/notices');
+        const response = await axios.get('/api/list/events');
         setNotices(response.data.content);
       } catch (error) {
         console.error('API 호출 중 오류 발생:', error);
@@ -150,4 +150,4 @@ const NoticePage = () => {
   );
 };
 
-export default NoticePage;
+export default EventPage;

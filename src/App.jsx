@@ -8,7 +8,10 @@ import StadiumPage from './pages/StadiumPage/StadiumPage';
 import SixtiethPage from './pages/60thPage/60thPage';
 import HamInseobPage from './pages/HamInseobPage/HamInseobPage';
 import GuestbookPage from './pages/GuestbookPage/GuestbookPage';
+import TotalPage from './pages/NoticePage/TotalPage';
 import NoticePage from './pages/NoticePage/NoticePage';
+import EventPage from './pages/NoticePage/EventPage';
+
 import PerformancesPage from './pages/PerformancesPage/PerformancesPage';
 import IntroPage from './pages/Intro/Intro';
 
@@ -104,6 +107,8 @@ const App = () => {
         <Route path='/performance' element={<PerformancesPage />} />  {/* 공연 */}
         <Route path='/guestbook' element={<GuestbookPage />} />  {/* 방명록 */}
         <Route path='/notice' element={<NoticePage />} />  {/* 공지사항 */}
+        <Route path='/total' element={<TotalPage />} />  {/* 공지사항 */}
+        <Route path='/event' element={<EventPage />} />  {/* 공지사항 */}
         <Route path='/intro' element={<IntroPage />} />  {/* 개발자 소개 */}
       </Routes>
     </div>
