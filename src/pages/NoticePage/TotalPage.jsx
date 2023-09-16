@@ -69,6 +69,8 @@ const TotalPage = () => {
 
   return (
     <article>
+      <div className="box">
+        <div className='center'>
     {!selectedNotice && <Menubar />}
     <div className="notice-board">
       <div className="notice-container">
@@ -144,6 +146,8 @@ const TotalPage = () => {
           </div>
         )}
       </Modal>
+    </div>
+    </div>
     </div>
   </article>
   );

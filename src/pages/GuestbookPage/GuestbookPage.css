@@ -259,3 +259,10 @@
       background-color: rgb(156, 163, 169, 0.6);
       cursor: not-allowed;
   }
+
+  @media (min-width: 1020px) {
+    .centered-button {
+      width: 91%;
+      margin-right: 3%;
+    }
+  }
