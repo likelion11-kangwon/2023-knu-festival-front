@@ -37,7 +37,7 @@ const GuestbookPage = () => {
   useEffect(() => {
     const fetchGuestbookEntries = async () => {
       try {
-        const response = await axios.get(`http://49.50.172.190:8080/api/guestbook/pageList?page=${currentPage}`);
+        const response = await axios.get(`//49.50.172.190:8080/api/guestbook/pageList?page=${currentPage}`);
         setEntries(response.data.content);
         setTotalPages(response.data.totalPages); 
       } catch (error) {
@@ -101,7 +101,7 @@ const GuestbookPage = () => {
     };
 
     try {
-      const response = await axios.post('http://49.50.172.190:8080/api/guestbook/register', data, {
+      const response = await axios.post('//49.50.172.190:8080/api/guestbook/register', data, {
         headers: {
           'Content-Type': 'application/json'
         }
@@ -120,7 +120,7 @@ const GuestbookPage = () => {
         // 리로드
         const fetchGuestbookEntries = async () => {
           try {
-            const response = await axios.get(`http://49.50.172.190:8080/api/guestbook/pageList?page=${currentPage}`);
+            const response = await axios.get(`//49.50.172.190:8080/api/guestbook/pageList?page=${currentPage}`);
             setEntries(response.data.content);
             setTotalPages(response.data.totalPages); 
           } catch (error) {
