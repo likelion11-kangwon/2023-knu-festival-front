@@ -64,3 +64,10 @@
 .category-list a:hover {
     font-size: 1.1rem;
 }
+
+@media (min-width: 1020px) {
+    .menu-icon-box {
+        top: 1rem;
+        right: 2rem;
+    }
+  }

@@ -15,6 +15,7 @@ article {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* 배경 화면 */

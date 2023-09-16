@@ -29,6 +29,8 @@
 
 `npm start`
 
+`npm run lint`
+
 ## 🌟 commit message rules
 - 예시: [feat] 게시판 기능 구현
 

@@ -4,6 +4,7 @@ import Menubar from '../../components/Menubar';
 import './NoticePage.css';
 import Modal from 'react-modal';
 import { useAxios } from '../../libs/axios';
+import { HiOutlineChevronLeft } from 'react-icons/hi';
 
 const NoticePage = () => {
   const [notices, setNotices] = useState([]);
@@ -76,12 +77,14 @@ const NoticePage = () => {
         >
           {selectedNotice && (
             <div>
+              <div className="close-icon-box" onClick={closeModal}>
+                <HiOutlineChevronLeft />
+              </div>
               <p className="notice-title">{selectedNotice.title}</p>
               <p>{selectedNotice.createDate}</p>
               <p>{selectedNotice.content}</p>
               <button onClick={prevNotice}>이전글</button>
               <button onClick={nextNotice}>다음글</button>
-              <button onClick={closeModal}>닫기</button>
             </div>
           )}
         </Modal>

@@ -1,0 +1,44 @@
+  /* 모달창 닫기 버튼 */
+  .close-icon-box {
+    display: flex;
+    position: fixed;
+    width: 2.4rem;
+    height: 2.4rem;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.12);
+    border-radius: 6px;
+    color: white;
+    
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+  }
+  
+  @media (min-width: 1020px) {
+    .close-icon-box {
+        top: 1rem;
+        right: 2rem;
+    }
+  }
+
+  /* 카피라이트 내용 */
+  .bottom-logo {
+    margin-top: 3.2rem;
+  }
+
+  .copyright {
+    color: #E8E9EB;
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .copyright-com {
+    color: #E8E9EB;
+    font-size: 0.6rem;
+    margin-top: 0.1rem;
+    margin-bottom: -10rem;
+  }

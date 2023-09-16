@@ -3,31 +3,82 @@ import Menubar from '../../components/Menubar';
 import './GuestbookPage.css';
 import GuestbookEntry from './GuestbookEntry';
 import Modal from 'react-modal';
-import { IoIosClose } from 'react-icons/io';
+import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
 import { IoIosAdd } from 'react-icons/io';
 import { IoIosArrowRoundUp } from 'react-icons/io';
 import { useAxios } from "../../libs/axios";
+import SvgBottomLogo from '../../components/BottomLogo';
+import userImg1 from './user-img1.png';
+import userImg2 from './user-img2.png';
+import userImg3 from './user-img3.png';
+import userImg4 from './user-img4.png';
+import userImg5 from './user-img5.png';
+import userImg6 from './user-img6.png';
+import userImg7 from './user-img7.png';
+import userImg8 from './user-img8.png';
+import userImg9 from './user-img9.png';
+import userImg10 from './user-img10.png';
+import userImg11 from './user-img11.png';
+import userImg12 from './user-img12.png';
+import userImg13 from './user-img13.png';
+import userImg14 from './user-img14.png';
 
 const GuestbookPage = () => {
   const [entries, setEntries] = useState([]);
   const [nickname, setNickname] = useState('');
   const [content, setContent] = useState('');
   const [modalIsOpen, setModalIsOpen] = useState(false); // 모달 열림 상태 추가
-  
+  const IMAGES = [ userImg1 , userImg2, userImg3, userImg4, userImg5, userImg6, userImg7, userImg8, userImg9, userImg10, userImg11, userImg12, userImg13, userImg14];
+  const [currentPage, setCurrentPage] = useState(0); 
+  const [totalPages, setTotalPages] = useState(0);
+
   const axios = useAxios();
 
   useEffect(() => {
     const fetchGuestbookEntries = async () => {
       try {
-        const response = await axios.get('http://49.50.172.190:8080/api/guestbook/pageList');
+        const response = await axios.get(`http://49.50.172.190:8080/api/guestbook/pageList?page=${currentPage}`);
         setEntries(response.data.content);
+        setTotalPages(response.data.totalPages); 
       } catch (error) {
         console.error('API 호출 중 오류 발생:', error);
       }
     };
 
     fetchGuestbookEntries();
-  }, []);
+  }, [currentPage]);
+
+  const Pagination = () => {
+    const MAX_VISIBLE_PAGES = 2;
+    const firstVisiblePage = Math.floor(currentPage / MAX_VISIBLE_PAGES) * MAX_VISIBLE_PAGES;
+    const pages = [...Array(Math.min(totalPages - firstVisiblePage, MAX_VISIBLE_PAGES)).keys()].map(i => i + firstVisiblePage);
+  
+    return (
+      <div className="pagination" style={{ fontFamily: 'Pretendard-Bold'}}>
+        {firstVisiblePage > 0 && (
+          <button onClick={() => setCurrentPage(firstVisiblePage - 1)}>
+            <HiOutlineChevronLeft />
+          </button>
+        )}
+  
+        {pages.map(page => (
+          <button 
+            key={page} 
+            onClick={() => setCurrentPage(page)}
+            className={currentPage === page ? 'active' : ''}
+          >
+            {page + 1}
+          </button>
+        ))}
+  
+        {firstVisiblePage + MAX_VISIBLE_PAGES < totalPages && (
+          <button onClick={() => setCurrentPage(firstVisiblePage + MAX_VISIBLE_PAGES)}>
+            <HiOutlineChevronRight />
+          </button>
+        )}
+      </div>
+    );
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -50,15 +101,38 @@ const GuestbookPage = () => {
     };
 
     try {
-      const response = await axios.post('http://49.50.172.190:8080/api/guestbook/register', data);
-
-      setEntries([...entries, response.data]);
-
+      const response = await axios.post('http://49.50.172.190:8080/api/guestbook/register', data, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+    
+      setEntries([response.data, ...entries]);
+    
       setNickname('');
       setContent('');
       setModalIsOpen(false); // 작성 완료 후 모달 닫기
+
+      // 1페이지로 돌아가기
+      if (currentPage !== 0) {
+        setCurrentPage(0);
+      } else {
+        // 리로드
+        const fetchGuestbookEntries = async () => {
+          try {
+            const response = await axios.get(`http://49.50.172.190:8080/api/guestbook/pageList?page=${currentPage}`);
+            setEntries(response.data.content);
+            setTotalPages(response.data.totalPages); 
+          } catch (error) {
+            console.error('API 호출 중 오류 발생:', error);
+          }
+        };
+
+        fetchGuestbookEntries();
+      }
+
     } catch (error) {
-      console.error('API 호출 중 오류 발생:', error);
+      console.error('API 호출 중 오류 발생:', error.response || error);
     }
   };
 
@@ -73,26 +147,36 @@ const GuestbookPage = () => {
     return false;
   };
 
-  // 작성 버튼 활성화 여부를 결정하는 함수
+  // 작성 버튼 활성화 여부 결정 함수
   const isSubmitDisabled = nickname.trim() === '' || content.trim() === '';
 
   return (
-    <article>
+    <article className="guestbook-article">
       {modalIsOpen ? null : <Menubar />}
-      <div className="guestbook-container" style={{ display: modalIsOpen ? 'none' : 'block' }}>
-        <span className="page-title">방명록</span>
-        <div className="centered-container">
-          <button className="centered-button" onClick={() => setModalIsOpen(true)}>
-            <IoIosAdd className="plus-icon" /> 방명록 쓰기
-          </button>
-        </div>
-      </div>
-      <div className="centered-container" style={{ display: modalIsOpen ? 'none' : 'block' }}>
-          <div className="entries">
-            {entries.map((entry, index) => (
-              <GuestbookEntry key={index} entry={entry} />
-            ))}
+      <div  style={{ display: modalIsOpen ? 'none' : 'block' }}>
+        <div className="guestbook-container">
+          <span className="page-title">방명록</span>
+          <div className="centered-container">
+            <button className="centered-button" onClick={() => setModalIsOpen(true)}>
+              <IoIosAdd className="plus-icon" /> 방명록 쓰기
+            </button>
           </div>
+          <div className="blur-background"></div>
+        </div>
+        <div className="guestbook-entries">
+            <div className="entries">
+              {entries.map((entry, index) => (
+                <GuestbookEntry key={index} entry={entry} images={IMAGES}/>
+              ))}
+            </div>
+        </div>
+        <div className="guestbook-bottom">
+          <Pagination />
+        </div>
+        <div className='centered-guest'>
+          <SvgBottomLogo className="bottom-logo-com" width="10rem" height="2rem"/>
+        <div className='copyright-com'>Copyright 2023. LIKELION KNU all rights reserved.</div>
+        </div>
       </div>
       <Modal
         isOpen={modalIsOpen}
@@ -102,33 +186,39 @@ const GuestbookPage = () => {
       >
         <div className="modal-header">
           <span className="page-title">방명록</span>
-          
         </div>
         <div className="close-icon">
           <div className="close-icon-box">
-            <IoIosClose onClick={() => setModalIsOpen(false)} />
+            <HiOutlineChevronLeft onClick={() => setModalIsOpen(false)} />
           </div>
         </div>
-        <form onSubmit={handleSubmit}>
+        <form className="write-form" onSubmit={handleSubmit}>
         <span className="write-title">닉네임</span>
           <div>
           <input
-            type="text"
-            placeholder="사용할 닉네임을 입력하세요."
-            value={nickname}
-            onChange={(e) => setNickname(e.target.value)}
+              className="write-name"
+              type="text"
+              placeholder="닉네임을 입력하세요. (최대 12자)"
+              value={nickname}
+              onChange={(e) => setNickname(e.target.value)}
+              maxLength="12"
+              style={{ fontFamily: 'Pretendard', fontWeight: 'normal' }}
           />
           </div>
           <span className="write-title">방명록</span>
           <div>
           <textarea
-            placeholder="방명록 내용을 입력하세요.
-욕설 또는 부정적인 단어의 사용은 제한돼요."
+            className="write-content"
+            placeholder="내용을 입력하세요. (최대 100자)"
             value={content}
             onChange={(e) => setContent(e.target.value)}
+            maxLength="100"
+            style={{ fontFamily: 'Pretendard', fontWeight: 'normal' }}
           />
           </div>
-          <button type="submit" disabled={isSubmitDisabled}>방명록 업로드 <IoIosArrowRoundUp/></button>
+          { false && (  // 중요!!!
+          <button className="submit" type="submit" disabled={isSubmitDisabled} style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1rem'}}>방명록 업로드 <IoIosArrowRoundUp size="1.6rem"/></button>
+          )}
         </form>
       </Modal>
     </article>

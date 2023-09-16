@@ -65,7 +65,7 @@ const HomePage = () => {
     };
 
     if (listRef.current) {
-      listRef.current.addEventListener('scroll', handleScroll);
+      listRef.current.addEventListener('scroll', handleScroll, { passive: true });
     }
 
     return () => {
@@ -129,7 +129,7 @@ const HomePage = () => {
         <SvgTitle className="title" width="30rem" height="27rem" />
       </div>
       <div className="centered-img">
-        <SvgSubTitle className="sub-title" font-size="13rem" />
+        <SvgSubTitle className="sub-title" fontSize="13rem" />
       </div>
       <div className="centered-img">
         <div className="centered-date" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1.4rem' }}>
@@ -148,14 +148,14 @@ const HomePage = () => {
           <li className="fade-item"><Link to="/guestbook">방명록</Link></li>
           <li className="fade-item"><Link to="/notice">공지사항</Link></li>
       </ul>
-      <SvgSubTxt className="sub-txt" font-size="10rem" />
+      <SvgSubTxt className="sub-txt" fontSize="10rem" />
       </div>
 
       <div className="centered-map">
         <div className="map-txt fade-item" style={{ fontFamily: 'Pretendard-ExtraBold', fontWeight: '800' }}>축제 지도</div>
         <SvgMap className="map fade-item" width="100%" height="100%"/>
       </div>
-      <div className='centered-home'>
+      <div className='centered-copy'>
         <div className='about-makers fade-item' style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold' }}>About Makers</div>
         <Link to="/intro" className='likelion-btn fade-item' style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold' }}>멋쟁이사자처럼 강원대학교 <IoIosArrowForward style={{ width: '2rem' }}/></Link>
         <SvgBottomLogo className="bottom-logo" width="17rem" height="6rem"/>
