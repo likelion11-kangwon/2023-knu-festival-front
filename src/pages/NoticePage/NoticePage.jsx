@@ -129,7 +129,7 @@ const NoticePage = () => {
               <HiOutlineX />
             </div>
             <p className="notice-title">{selectedNotice.title}</p>
-            <p className="notice-date" style={{ fontFamily: 'Pretendard-Medium', fontWeight: '500', fontSize: '1rem', color: '#9CA3A9' }}>{formatDate(selectedNotice.createDate)}</p>
+            <p className="notice-date" style={{ fontFamily: 'Pretendard-Medium', fontWeight: '500', fontSize: '0.9rem', color: '#9CA3A9' }}>{formatDate(selectedNotice.createDate)}</p>
             {/* 공지사항 내용을 ReactMarkdown으로 랜더링 */}
             <div className='markdown-box'>
             <ReactMarkdown 

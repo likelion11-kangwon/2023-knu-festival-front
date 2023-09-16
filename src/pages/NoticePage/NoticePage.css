@@ -138,11 +138,11 @@
 }
 
 .notice-title {
-  width: 100%;
+  width: 86vw;
   margin-top: 6rem;
   margin-bottom: 0.4rem;
   border-radius: 6px;
-  margin-left: 0.6rem;
+  margin-left: 1.4rem;
 
   font-family: 'Pretendard-Bold';
   font-weight: bold;
@@ -150,7 +150,7 @@
 }
 
 .notice-date {
-  margin: 1rem 0 2rem 0.6rem;
+  margin: 1rem 1rem 0 1.4rem;
   border-radius: 6px;
   font-family: 'Pretendard-Bold';
   font-weight: bold;
@@ -158,10 +158,12 @@
 
 .markdown-box {
   width: 100vw;
-  height: 60vh;
+  height: 66vh;
 
   display: flex;
   justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .react-markdown {
@@ -169,7 +171,7 @@
   background-color: rgb(255, 255, 255, 0.12);
   border-radius: 20px;
 
-  width: 100%;
+  width: 90%;
   height: auto;
   overflow-y: scroll;
   margin: 1.4rem;
@@ -194,8 +196,10 @@
 .notice-btn {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem;
+
+  width: auto;
+  height: 4rem;
 }
 
 .before-btn {
