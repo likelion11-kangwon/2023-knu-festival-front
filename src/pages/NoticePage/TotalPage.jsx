@@ -30,7 +30,7 @@ const TotalPage = () => {
     };
 
     fetchNoticeList();
-  }, []);
+  }, [axios]);
 
   const openModal = (notice) => {
     setSelectedNotice(notice);
