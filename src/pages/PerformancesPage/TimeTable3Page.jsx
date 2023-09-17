@@ -87,35 +87,35 @@ const TimeTable3Page = () => {
         }}>
             
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
-              <p className="perfo-time" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1rem', backgroundColor: isNow ? 'white' : '', color: isNow ? '#8A61BF' : '#C9CCD1' }}>
+              <div className="perfo-time" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1rem', backgroundColor: isNow ? 'white' : '', color: isNow ? '#8A61BF' : '#C9CCD1' }}>
                   {isNow && <span style={{color: "#68CE67", marginRight: "5px"}}>●</span>}
                   {item.startTime}~{item.endTime}
-              </p>
+              </div>
 
               <div className="perfo-artist" style={item.detail ? { display: 'flex', alignItems: 'center', backgroundColor: 'rgb(255, 255, 255, 0.12)' } : {}}>
                   {item.img && <img src={item.img} alt={item.title} width={isSvg ? "100%" : "92"} style={{ marginRight: '1rem', borderRadius: '16px'}}/>}
 
                         {item.detail ? (
                         <div>
-                            <p className="perfo-content-v2" style={{ fontFamily: 'Pretendard', fontSize: '0.6rem' }}>
+                            <div className="perfo-content-v2" style={{ fontFamily: 'Pretendard', fontSize: '0.6rem' }}>
                                 {item.content}
-                            </p>
-                            <p className="perfo-title-v2" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1.2rem' }}>
+                            </div>
+                            <div className="perfo-title-v2" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1.2rem' }}>
                                 <div className="perfo-title-left">{item.title}</div> <div className="perfo-title-right"><IoIosArrowForward /></div>
-                            </p>
-                            <p className="perfo-subtitle" style={{ fontFamily: 'Pretendard-Medium', fontWeight: '500', fontSize: '0.8rem' }}>
+                            </div>
+                            <div className="perfo-subtitle" style={{ fontFamily: 'Pretendard-Medium', fontWeight: '500', fontSize: '0.8rem' }}>
                                 {item.subTitle}
-                            </p>
+                            </div>
                         </div>
                         ) : (
                         <div>
-                          <p className="perfo-title" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1.2rem' }}>
+                          <div className="perfo-title" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1.2rem' }}>
                               {item.title}
-                          </p>
-                          <p className="perfo-content" style={{ fontFamily: 'Pretendard', fontSize: '1rem' }}>
+                          </div>
+                          <div className="perfo-content" style={{ fontFamily: 'Pretendard', fontSize: '1rem' }}>
                               {item.content}
                               {item.detailOther && <div className="prefo-other" style={{ fontSize: '0.8rem' }}>더 보기 <div className="prefo-other-right"><IoIosArrowForward /></div></div> }
-                          </p>
+                          </div>
                         </div>
                         )}
                     </div>
@@ -149,14 +149,14 @@ const TimeTable3Page = () => {
                   <h2>아티스트 인기곡</h2>
                   (업데이트 중)
                   {/* {selectedFestival.popularSongs.map((song, index) => (
-                    <p key={index}>
+                    <div key={index}>
                       {song.title} - {song.album} ({song.date})
-                    </p>
+                    </div>
                   ))} */}
                   <h2>아티스트 미리 듣기</h2>
                   (업데이트 중)
                   <h2>아티스트 정보</h2>
-                  <p style={{ whiteSpace: "pre-line" }}>{selectedFestival.artistInfo}</p>
+                  <div style={{ whiteSpace: "pre-line" }}>{selectedFestival.artistInfo}</div>
                 </div>
               </div>
               )}
@@ -166,7 +166,7 @@ const TimeTable3Page = () => {
             {selectedFestivalType === "detailOther" && (
             <div style={{ fontFamily: 'Pretendard'}}>
               <h2>{selectedFestival.title}</h2>
-              <p>(업데이트 중)</p>
+              <div>(업데이트 중)</div>
             </div>
           )}
 
