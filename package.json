@@ -15,6 +15,7 @@
     "rehype-sanitize": "^6.0.0",
     "svg-to-react-cli": "^1.4.0",
     "svgo": "^3.0.2",
+    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
