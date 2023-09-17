@@ -36,7 +36,6 @@ const GuestbookPage = () => {
   const axios = useAxios();
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchGuestbookEntries = async () => {
       try {
         const response = await axios.get(`/api/guestbook/pageList?page=${currentPage}`);
@@ -48,7 +47,7 @@ const GuestbookPage = () => {
     };
 
     fetchGuestbookEntries();
-  }, [currentPage]);
+  }, [currentPage, axios]);
 
   const Pagination = () => {
     const MAX_VISIBLE_PAGES = 2;
