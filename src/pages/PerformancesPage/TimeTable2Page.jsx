@@ -1,5 +1,5 @@
 // 공연
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Menubar from '../../components/Menubar';
 import Modal from 'react-modal';

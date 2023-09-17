@@ -19,6 +19,7 @@ const TotalPage = () => {
   const axios = useAxios();
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchNoticeList = async () => {
       try {
         const response = await axios.get('/api/notices');

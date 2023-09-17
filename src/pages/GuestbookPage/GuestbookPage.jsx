@@ -36,6 +36,7 @@ const GuestbookPage = () => {
   const axios = useAxios();
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const fetchGuestbookEntries = async () => {
       try {
         const response = await axios.get(`/api/guestbook/pageList?page=${currentPage}`);

@@ -56,21 +56,23 @@ const HomePage = () => {
   const listRef = useRef(null);
 
   useEffect(() => {
+    const currentList = listRef.current; // 로컬 변수에 저장
+  
     const handleScroll = () => {
-      if (listRef.current && listRef.current.scrollTop > 100) {
+      if (currentList && currentList.scrollTop > 100) {
         setShowButton(true);
       } else {
         setShowButton(false);
       }
     };
-
-    if (listRef.current) {
-      listRef.current.addEventListener('scroll', handleScroll, { passive: true });
+  
+    if (currentList) {
+      currentList.addEventListener('scroll', handleScroll, { passive: true });
     }
-
+  
     return () => {
-      if (listRef.current) {
-        listRef.current.removeEventListener('scroll', handleScroll);
+      if (currentList) {
+        currentList.removeEventListener('scroll', handleScroll);
       }
     };
   }, []);
@@ -78,6 +80,8 @@ const HomePage = () => {
 
   // 하단에 애니메이션 적용
   useEffect(() => {
+    const currentList = listRef.current; // 로컬 변수에 저장
+  
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -100,20 +104,20 @@ const HomePage = () => {
       threshold: 0.15
     });
   
-    if (listRef.current) {
-      const listItems = listRef.current.querySelectorAll('.fade-item:not(.map)');
+    if (currentList) {
+      const listItems = currentList.querySelectorAll('.fade-item:not(.map)');
       listItems.forEach(item => observer.observe(item));
   
-      const mapItems = listRef.current.querySelectorAll('.map');
+      const mapItems = currentList.querySelectorAll('.map');
       mapItems.forEach(item => mapObserver.observe(item));
     }
   
     return () => {
-      if (listRef.current) {
-        const listItems = listRef.current.querySelectorAll('.fade-item:not(.map)');
+      if (currentList) {
+        const listItems = currentList.querySelectorAll('.fade-item:not(.map)');
         listItems.forEach(item => observer.unobserve(item));
   
-        const mapItems = listRef.current.querySelectorAll('.map');
+        const mapItems = currentList.querySelectorAll('.map');
         mapItems.forEach(item => mapObserver.unobserve(item));
       }
     };

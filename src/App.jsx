@@ -15,7 +15,7 @@ import EventPage from './pages/NoticePage/EventPage';
 import PerformancesPage from './pages/PerformancesPage/PerformancesPage';
 import TimeTable2Page from './pages/PerformancesPage/TimeTable2Page';
 import TimeTable3Page from './pages/PerformancesPage/TimeTable3Page';
-import IntroPage from './pages/Intro/Intro';
+import IntroPage from './pages/Intro/IntroPage';
 
 const App = () => {
   const [circles, setCircles] = useState([]);
