@@ -1,0 +1,276 @@
+.sixth {
+  color: #fff;
+  text-align: center;
+}
+
+
+
+/* 트럭버튼들의 이동이랑 버튼 디자인 */
+
+.truck_1Move {
+  position: absolute;
+  top: 5rem;
+  right: 6rem;
+  
+  border: 1px solid #817f7f;
+}
+.truck_2Move {
+  position: absolute;
+  top: 6rem;
+  right: 8.3rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_3Move {
+  position: absolute;
+  top: 7rem;
+  right: 10.6rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_4Move {
+  position: absolute;
+  top: 8rem;
+  right: 12.9rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_5Move {
+  position: absolute;
+  top: 9rem;
+  right: 15.2rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_6Move {
+  position: absolute;
+  top: 10rem;
+  right: 17.5rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_7Move {
+  position: absolute;
+  top: 11rem;
+  right: 19.8rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_8Move {
+  position: absolute;
+  top: 14.3rem;
+  right: 19.8rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_9Move {
+  position: absolute;
+  top: 17.6rem;
+  right: 19.8rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_10Move {
+  position: absolute;
+  top: 20.9rem;
+  right: 19.8rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_11Move {
+  position: absolute;
+  top: 24.2rem;
+  right: 19.8rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_12Move {
+  position: absolute;
+  top: 27.5rem;
+  right: 19.8rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_13Move {
+  position: absolute;
+  top: 35rem;
+  right: 14rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_14Move {
+  position: absolute;
+  top: 34rem;
+  right: 11.5rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_15Move {
+  position: absolute;
+  top: 33rem;
+  right: 9rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_16Move {
+  position: absolute;
+  top: 32rem;
+  right: 6.5rem;
+
+  border: 1px solid #817f7f;
+}
+.truck_17Move {
+  position: absolute;
+  top: 31rem;
+  right: 4rem;
+
+  border: 1px solid #817f7f;
+}
+.truckButton {
+  cursor: pointer;
+}
+
+
+/* 주류 판매 버튼들의 이동이랑 버튼 디자인 */
+
+.alcohol_1Move {
+  position: absolute;
+  top: 15rem;
+  right: 8rem;
+  
+  border: 1px solid #817f7f;
+}
+.alcohol_2Move {
+  position: absolute;
+  top: 31rem;
+  right: 18rem;
+  
+  border: 1px solid #817f7f;
+}
+.alcoholButton {
+  cursor: pointer;
+}
+
+
+
+/* 학생회 버튼들의 이동이랑 버튼 디자인 */
+.councilMove {
+  position: absolute;
+  top: 18rem;
+  right: 7rem;
+  
+  border: 1px solid #817f7f;
+}
+.councilButton {
+  cursor: pointer;
+}
+
+/* 감자아일랜드 버튼들의 이동이랑 버튼 디자인 */
+.potatoMove {
+  position: absolute;
+  top: 21rem;
+  right: 4rem;
+  
+  border: 1px solid #817f7f;
+}
+.potatoButton {
+  cursor: pointer;
+}
+
+/* 입장안내 버튼들의 이동이랑 버튼 디자인 */
+.enter_1 {
+  border: 1px solid #817f7f;
+
+  position: absolute;
+  top: 24rem;
+  right: 3.5rem;
+}
+.enter_2 {
+  border: 1px solid #817f7f;
+
+  position: absolute;
+  top: 34rem;
+  right: 18rem;
+}
+
+
+/* 리스트 전체보기 버튼의 이동이랑 버튼 디자인 */
+.listButton {
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  background-color: rgba(105, 105, 105, 0.4);
+  width: 18rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+/* 리스트 전체보기 버튼안의 글자 */
+.listButtonText {
+  color: #fff;
+  padding-top: 0.3rem;
+}
+
+
+
+
+
+
+/* 공통된 트럭,주류판매 등등 들의 모달창  */
+.modal {
+    margin: auto;
+    padding: 2rem;
+    width: 15rem;
+    height: 35rem;
+    background-color: #817f7f;
+    position: fixed;
+    top:3rem; 
+    left:1.5rem;
+    box-shadow : rgba(0, 0, 0, 0.05) 0 0 0 9999px;
+    z-index : 101;
+}
+
+/* 리스트 모달창 */
+.listModal {
+  width: 100%;
+  height: 100%;
+  background-color: #f7edff;
+  color: black;
+  position:absolute;
+  left: 0%;
+  top: 0%;
+  z-index : 100;
+}
+
+/* 공통된 취소버튼 */
+.cancel {
+ border-radius: 50%;
+ background-color: rgb(255, 255, 255);
+ color: black;
+ position: absolute;
+ top: 0.6rem;
+ left: 0.6rem;
+ padding-left: 0.3rem;
+ padding-right: 0.3rem;
+ cursor: pointer;
+}
+
+/* 리스트창 안에서 트럭 버튼들 */
+.truckButtonInList {
+  border: 1px solid black;
+  display: block;
+  width: 15rem;
+  height: 1.5rem;
+  margin: auto;
+  margin-top: 0.7rem;
+}
+
+/* 리스트창 안에서 안내 버튼 */
+.guideButton {
+  border: 1px solid black;
+  display: block;
+  width: 17rem;
+  height: 1.5rem;
+  margin: auto;
+  margin-top: 1rem;
+}

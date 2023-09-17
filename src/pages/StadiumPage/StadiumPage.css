@@ -1,0 +1,226 @@
+.stadium {
+  color: aliceblue;
+}
+
+.boothButton_1 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 8rem;
+  right: 1rem;
+}
+.boothButton_2 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 10.5rem;
+  right: 1rem;
+}
+.boothButton_3 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 13rem;
+  right: 1rem;
+}
+.boothButton_4 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 15.5rem;
+  right: 1rem;
+}
+.boothButton_5 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 18rem;
+  right: 1rem;
+}
+.boothButton_6 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 20.5rem;
+  right: 1rem;
+}
+.boothButton_7 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 23rem;
+  right: 1rem;
+}
+.boothButton_8 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 25.5rem;
+  right: 1rem;
+}
+.boothButton_9 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 28rem;
+  right: 1rem;
+}
+.boothButton_10 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 30.5rem;
+  right: 1rem;
+}
+.boothButton_11 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 33rem;
+  right: 1.8rem;
+}
+.boothButton_12 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 35.5rem;
+  right: 3rem;
+}
+.boothButton_13 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 38rem;
+  right: 4.5rem;
+}
+.boothButton_14 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 38rem;
+  left: 4.5rem;
+}
+.boothButton_15 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 35.5rem;
+  left: 3rem;
+}
+.boothButton_16 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 33rem;
+  left: 1.8rem;
+}
+.boothButton_17 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 30.5rem;
+  left: 1rem;
+}
+.boothButton_18 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 28rem;
+  left: 1rem;
+}
+.boothButton_19 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 25.5rem;
+  left: 1rem;
+}
+.boothButton_20 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 23rem;
+  left: 1rem;
+}
+.boothButton_21 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 20.5rem;
+  left: 1rem;
+}
+.boothButton_22 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 18rem;
+  left: 1rem;
+}
+.boothButton_23 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 15.5rem;
+  left: 1rem;
+}
+.boothButton_24 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 13rem;
+  left: 1rem;
+}
+.boothButton_25 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 10.5rem;
+  left: 1rem;
+}
+.boothButton_26 {
+  border: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 8rem;
+  left: 1rem;
+}
+
+
+
+.boothModal {
+  margin: auto;
+  padding: 2rem;
+  width: 15rem;
+  height: 35rem;
+  background-color: #817f7f;
+  position: fixed;
+  top:3rem; 
+  left:1.5rem;
+  box-shadow : rgba(0, 0, 0, 0.05) 0 0 0 9999px;
+  z-index : 101;
+}
+
+/* 리스트 전체보기 버튼 */
+.listButtonInStadium {
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  background-color: rgba(105, 105, 105, 0.4);
+  width: 18rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  text-align: center;
+}
+.listButtonTextInStadium {
+  color: #fff;
+  padding-top: 0.3rem;
+}
+/* 리스트 전체보기 모달창 */
+.listModalInStadium {
+  width: 100%;
+  height: 100%;
+  background-color: #f7edff;
+  color: black;
+  position:absolute;
+  left: 0%;
+  top: 0%;
+  z-index : 100;
+}
+
+
+/* 공통된 취소버튼 */
+.cancel {
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  cursor: pointer;
+ }
+ /* 리스트창 안에서 부스 버튼들 */
+.boothButtonInList{
+  border: 1px solid black;
+  display: block;
+  width: 15rem;
+  height: 1.5rem;
+  margin: auto;
+  margin-top: 0.7rem;
+}
