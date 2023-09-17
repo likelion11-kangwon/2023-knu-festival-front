@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "axios": "^1.5.0",
-    
     "react": "^18.2.0",
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
@@ -12,9 +11,9 @@
     "react-markdown": "^8.0.7",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.15.0",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^5.0.1",
     "rehype-sanitize": "^6.0.0",
-    "svg-to-react-cli": "^1.5.0",
+    "svg-to-react-cli": "^1.4.0",
     "svgo": "^3.0.2",
     "web-vitals": "^2.1.4"
   },
