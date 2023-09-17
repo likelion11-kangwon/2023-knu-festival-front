@@ -12,7 +12,7 @@ import TotalPage from './pages/NoticePage/TotalPage';
 import NoticePage from './pages/NoticePage/NoticePage';
 import EventPage from './pages/NoticePage/EventPage';
 
-import PerformancesPage from './pages/PerformancesPage/PerformancesPage';
+import TimeTable1Page from './pages/PerformancesPage/TimeTable1Page';
 import TimeTable2Page from './pages/PerformancesPage/TimeTable2Page';
 import TimeTable3Page from './pages/PerformancesPage/TimeTable3Page';
 import IntroPage from './pages/Intro/IntroPage';
@@ -106,7 +106,7 @@ const App = () => {
         <Route path='/stadium' element={<StadiumPage />} />  {/* 대운동장 */}
         <Route path='/60th' element={<SixtiethPage />} />  {/* 60주념기념관 */}
         <Route path='/haminseob' element={<HamInseobPage />} />  {/* 함인섭광장 */}
-        <Route path='/timetable/day1' element={<PerformancesPage />} />  {/* 공연 */}
+        <Route path='/timetable/day1' element={<TimeTable1Page />} />  {/* 공연 */}
         <Route path='/timetable/day2' element={<TimeTable2Page />} />  {/* 공연 */}
         <Route path='/timetable/day3' element={<TimeTable3Page />} />  {/* 공연 */}
         <Route path='/guestbook' element={<GuestbookPage />} />  {/* 방명록 */}

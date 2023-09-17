@@ -15,7 +15,7 @@ const EventPage = () => {
   const [notices, setNotices] = useState([]);
   const [selectedNotice, setSelectedNotice] = useState(null);
   const location = useLocation();
-
+  
   const axios = useAxios();
 
   useEffect(() => {
@@ -129,15 +129,16 @@ const EventPage = () => {
               <HiOutlineX />
             </div>
             <p className="notice-title">{selectedNotice.title}</p>
-            <p className="notice-date" style={{ fontFamily: 'Pretendard-Medium', fontWeight: '500', fontSize: '1rem', color: '#9CA3A9' }}>{formatDate(selectedNotice.createDate)}</p>
+            <p className="notice-date" style={{ fontFamily: 'Pretendard-Medium', fontWeight: '500', fontSize: '0.9rem', color: '#9CA3A9' }}>{formatDate(selectedNotice.createDate)}</p>
             {/* 공지사항 내용을 ReactMarkdown으로 랜더링 */}
+            <div className='markdown-box'>
             <ReactMarkdown 
               className="react-markdown"
               children={selectedNotice.content} 
               allowDangerousHtml={true} 
               rehypePlugins={[rehypeSanitize]}
               style={{ fontFamily: 'Pretendard', fontWeight: 'normal', fontSize: '1rem', color: '#E8E9EB' }}
-          />
+          /></div>
           <div className="notice-btn">
             <button className="before-btn" onClick={prevNotice} style={{ fontFamily: 'Pretendard', fontWeight: 'normal', fontSize: '1rem', color: 'white'}}><IoIosArrowBack /> 이전글</button>
             <button className="next-btn" onClick={nextNotice} style={{ fontFamily: 'Pretendard', fontWeight: 'normal', fontSize: '1rem', color: 'white'}}>다음글 <IoIosArrowForward /></button>

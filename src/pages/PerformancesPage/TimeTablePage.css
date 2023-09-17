@@ -1,0 +1,153 @@
+  .perfo-category {
+    margin-left: 7%;
+    width: 86%;
+    text-align: center;  /* 버튼들을 수평 중앙에 배치 */
+    background-color: rgb(255, 255, 255, 0.12);
+    border-radius: 40px;
+    padding: 0.44rem 0;
+  }
+  
+  .perfo-category button {
+    display: inline-block; /* 각 버튼을 inline-block 요소로 만들어서 줄바꿈 없이 나열될 수 있게 합니다. */
+    margin: 0 0.2rem; /* 버튼 간 간격 (선택 사항) */
+    padding: 0.2rem 1.9rem;
+    background: none;
+    border-radius: 40px;
+    border: none;
+    color: white;
+  }
+  
+  .perfo-category .active {
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 0.2rem 0;
+    background-color: rgb(255, 255, 255, 0.12);
+  }
+
+  .perfo-item {
+    border-bottom: 2px solid rgb(255, 255, 255, 0.24);
+}
+
+  .perfo-artist {
+    width: 90%;
+    padding: 0.6rem;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  .perfo-subtitle {
+    margin-top: 0.2rem;
+    margin-bottom: 0;
+  }
+
+  .perfo-title {
+    height: auto;
+    display: flex;
+    justify-content: left;
+    margin: 0 0 0.2rem 0;
+  }
+
+  .perfo-content {
+    margin: 0.6rem 0 0 0;
+    color: #C9CCD1;
+  }
+
+  .perfo-title-v2 {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .perfo-content-v2 {
+    margin: 0 0 1rem 0;
+    color: #C9CCD1;
+  }
+
+  .perfo-title-left {
+    display: flex;
+  }
+
+  .perfo-title-right {
+    display: flex;
+    position: absolute;
+    right: 15%;
+  }
+
+  .prefo-other {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #CFBCE8;
+  }
+
+  .prefo-other-right {
+    display: flex;
+  }
+  
+  .entry-notice-date {
+    display: flex;
+    justify-content: left;
+    margin: 0.2rem 0;
+  }
+
+
+  /* 리스트 내용 */
+  .perfo-time {
+    padding: 0.2rem 0.6rem;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 0.24);
+  }
+
+  .perfo-board {
+    margin: 0;
+    padding: 0;
+    margin: 0 1.4rem;
+  }
+  
+  .perfo-board li {
+      list-style: none;
+      color: white;
+      padding: 1rem;
+      margin-top: 1rem;
+  }
+  
+
+ /* 모달 스타일 */
+.custom-modal-perfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .custom-modal-perfo div {
+      line-height: 1.5;
+  }
+  
+  .custom-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .detail-box{
+    padding: 0 1rem 1rem 1rem;
+    font-size: 0.8rem;
+    color: #C9CCD1;
+  }
+
+  .detail-box h2{
+    color: white;
+  }

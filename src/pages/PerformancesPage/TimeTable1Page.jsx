@@ -4,11 +4,11 @@ import { Link, useLocation } from 'react-router-dom';
 import Menubar from '../../components/Menubar';
 import Modal from 'react-modal';
 import './TimeTablePage.css';
-import day2Data from './day2.json';
+import day1Data from './day1.json';
 import { HiOutlineX } from 'react-icons/hi';
 import { IoIosArrowForward } from 'react-icons/io';
 
-const TimeTable2Page = () => {
+const TimeTable1Page = () => {
   const location = useLocation();
   const [selectedFestival, setSelectedFestival] = useState(null);
   const [selectedFestivalType, setSelectedFestivalType] = useState("");
@@ -32,8 +32,8 @@ const TimeTable2Page = () => {
     const currentHour = currentDate.getHours();
     const currentMinute = currentDate.getMinutes();
 
-    if (currentYear !== 2023 || currentMonth !== 9 || currentDay !== 20) {
-        return false;  // 2023년 9월 20일
+    if (currentYear !== 2023 || currentMonth !== 9 || currentDay !== 19) {
+        return false;  // 2023년 9월 19일
     }
 
     const [startHour, startMinute] = start.split(':').map(Number);
@@ -73,7 +73,7 @@ const TimeTable2Page = () => {
 
         <div>
         <ul className="perfo-board">
-    {day2Data.map((item) => {
+    {day1Data.map((item) => {
       const isSvg = item.img && item.img.endsWith('.svg');
       const isNow = isCurrentTimeBetween(item.startTime, item.endTime);
 
@@ -177,4 +177,4 @@ const TimeTable2Page = () => {
   );
 };
 
-export default TimeTable2Page;
+export default TimeTable1Page;

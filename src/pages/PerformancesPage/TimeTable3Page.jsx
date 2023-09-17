@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Menubar from '../../components/Menubar';
 import Modal from 'react-modal';
-import './PerformancesPage.css';
+import './TimeTablePage.css';
 import day3Data from './day3.json';
 import { HiOutlineX } from 'react-icons/hi';
 import { IoIosArrowForward } from 'react-icons/io';
