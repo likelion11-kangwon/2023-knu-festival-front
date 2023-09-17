@@ -1,0 +1,131 @@
+[
+    {
+      "id": 0,
+      "title": "플리마켓·부스·푸드트럭·포토존",
+      "content": "대운동장 및 함인섭광장",
+      "startTime": "11:00",
+      "endTime": "17:00",
+      "img": "",
+      "day": "Day 2",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 1,
+      "title": "Main Stage 재학생 우선 입장",
+      "content": "대운동장 특설 무대 좌, 우측. 팔찌 착용.",
+      "startTime": "16:30",
+      "endTime": "17:50",
+      "img": "",
+      "day": "Day 2",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 2,
+      "title": "Main Stage 전체 입장",
+      "content": "대운동장 특설 무대 좌, 우측.",
+      "startTime": "17:50",
+      "endTime": "18:00",
+      "img": "",
+      "day": "Day 2",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 3,
+      "title": "Main Stage 배리어프리존 입장",
+      "content": "대운동장 특설 무대 우측. 사전 신청자.",
+      "startTime": "17:50",
+      "endTime": "18:00",
+      "img": "",
+      "day": "Day 2",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 4,
+      "title": "가요제",
+      "content": "",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "img": "",
+      "day": "Day 2",
+      "detail": false,
+      "detailOther": true
+    },
+    {
+      "id": 5,
+      "title": "OK! 토크콘서트",
+      "subTitle":"옥지호교수님",
+      "content": "토크콘서트",
+      "startTime": "19:30",
+      "endTime": "20,00",
+      "img": "",
+      "day": "Day 2",
+      "detail": false,
+      "detailOther": true
+    },
+    {
+      "id": 6,
+      "title": "댄스제",
+      "content": "",
+      "startTime": "20:00",
+      "endTime": "21:30",
+      "img": "",
+      "day": "Day 2",
+      "detail": false,
+      "detailOther": true
+    },
+    {
+      "id": 7,
+      "title": "김나영",
+      "subTitle":"Kim Na-young",
+      "content": "아티스트",
+      "startTime": "21:30",
+      "endTime": "22:00",
+      "img": "/img/artist3.png",
+      "img2": "/img/artist3-1.svg",
+      "day": "Day 2",
+      "detail": true,
+      "detailOther": false,
+      "popularSongs": [
+        {
+          "title": "인기곡 A",
+          "album": "앨범 A",
+          "date": "2023-01-10"
+        },
+        {
+          "title": "인기곡 B",
+          "album": "앨범 B",
+          "date": "2023-03-15"
+        }
+      ],
+      "artistInfo": "깊은 목소리의 보컬리스트 김나영은 고전적인 발라드의 매력을 전달하는 아티스트입니다."
+    },
+    {
+      "id": 8,
+      "title": "G.R.BOY",
+      "subTitle": "기리보이",
+      "content": "아티스트",
+      "startTime": "22:00",
+      "endTime": "22:30",
+      "img": "/img/artist4.png",
+      "img2": "/img/artist4-1.svg",
+      "day": "Day 2",
+      "detail": true,
+      "popularSongs": [
+        {
+          "title": "인기곡 A",
+          "album": "앨범 A",
+          "date": "2023-01-10"
+        },
+        {
+          "title": "인기곡 B",
+          "album": "앨범 B",
+          "date": "2023-03-15"
+        }
+      ],
+      "artistInfo": "기리보이는 한국 힙합 아티스트 중에도 손꼽히는 창작욕을 가졌습니다. 2011년 싱글 You Look So Good To Me'로 데뷔 후 많은 작품을 발매했고, 여러 레이블의 컴필레이션 앨범과 방송 활동, 의류 브랜드 런칭 등을 병행하며 부지런히 움직였죠. 2018년에는 스윙스와 공동으로 힙합 레이블 “WEDAPLUGG Records'를 설립했습니다.\n\n기리보이는 많은 작품만큼이나 다양한 스타일을 선보입니다. 초반에는 20대 남녀가 겪을 법한 연애담을 주제로 어눌한 톤의 랩과 보컬, 지질한 감성을 내세운 부드러운 음악을 내세웠습니다. '치명적인 앨범'과 '육감적인 앨범’, '성인식' 등이 이 시기에 발매된 작품이죠. 자신의 음악 정체성을 어느 정도 정립한 후에는 발라드, 일렉트로닉 등 여러 장르에서 받은 영향을 음 악에 녹여냅니다. '기계적인 앨범'에서는 힙합에 퓨처 베이스를 접목하고, KGVOVC from Wybh, Vol. 1에서는 트랩 비트에 일렉트로닉 하우스를 얹는 등, 작품의 성격에 맞춰 끊임없이 새로운 음악적 시도를 하고 있습니다."
+    }
+  ]

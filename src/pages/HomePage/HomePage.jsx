@@ -138,7 +138,7 @@ const HomePage = () => {
       </div>
       <div className="page-container">
       <ul className="page-list" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold' }}>
-          <li className="fade-item"><Link to="/performance">공연 및 행사 안내</Link></li>
+          <li className="fade-item"><Link to="/timetable/day1">공연 및 행사 안내</Link></li>
           <li className="fade-item"><Link to="/stadium">대운동장</Link></li>
           <li className="fade-item"><Link to="/haminseob">함인섭광장</Link></li>
           <li className="fade-item"><Link to="/60th">60주념기념관</Link></li>

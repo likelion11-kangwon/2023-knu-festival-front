@@ -21,7 +21,7 @@ const Menubar = () => {
       <div className={`categories ${menuOpen ? 'visible' : ''}`}>
         <ul className="category-list" style={{ fontFamily: 'Pretendard', fontWeight: 'bold', fontSize: '1.2rem' }}>
           <li><Link to="/">홈</Link></li>
-          <li><Link to="/performance">공연 및 행사 안내</Link></li>
+          <li><Link to="/timetable/day1">공연 및 행사 안내</Link></li>
           <li><Link to="/stadium">대운동장</Link></li>
           <li><Link to="/haminseob">함인섭광장</Link></li>
           <li><Link to="/60th">60주념기념관</Link></li>

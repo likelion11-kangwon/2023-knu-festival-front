@@ -26,7 +26,7 @@ const SvgMap = (props) => (
     <g mask="url(#map_svg__b)">
       <path fill="url(#map_svg__c)" d="M0 38.291h393v1076H0z" />
       <g filter="url(#map_svg__d)">
-      <Link className="click-map" to="/performance">
+      <Link className="click-map" to="/timetable/day1">
         <rect
           width={130}
           height={36}

@@ -1,0 +1,162 @@
+[
+    {
+      "id": 0,
+      "title": "플리마켓·부스·푸드트럭·포토존",
+      "content": "대운동장 및 함인섭광장",
+      "startTime": "11:00",
+      "endTime": "17:00",
+      "img": "",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 1,
+      "title": "Main Stage 재학생 우선 입장",
+      "content": "대운동장 특설 무대 좌, 우측. 팔찌 착용.",
+      "startTime": "16:30",
+      "endTime": "17:50",
+      "img": "",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 2,
+      "title": "Main Stage 전체 입장",
+      "content": "대운동장 특설 무대 좌, 우측.",
+      "startTime": "17:50",
+      "endTime": "18:00",
+      "img": "",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 3,
+      "title": "Main Stage 배리어프리존 입장",
+      "content": "대운동장 특설 무대 우측. 사전 신청자.",
+      "startTime": "17:50",
+      "endTime": "18:00",
+      "img": "",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 4,
+      "title": "백령응원단 공연",
+      "content": "",
+      "startTime": "18:00",
+      "endTime": "18:30",
+      "img": "",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 5,
+      "title": "보이는 라디오",
+      "content": "강원대 학생들이 직접 작성한, 강원대와 함께한 날들.",
+      "startTime": "18:30",
+      "endTime": "19:30",
+      "img": "",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 6,
+      "title": "놀이패한마당 공연",
+      "content": "",
+      "startTime": "19:30",
+      "endTime": "20:00",
+      "img": "",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 7,
+      "title": "개막식",
+      "content": "",
+      "startTime": "20:00",
+      "endTime": "20:30",
+      "img": "",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": true
+    },
+    {
+      "id": 8,
+      "title": "GEORGE",
+      "subTitle": "죠지",
+      "content": "아티스트",
+      "startTime": "20:30",
+      "endTime": "21:00",
+      "img": "/img/artist1.png",
+      "img2": "/img/artist1-1.svg",
+      "day": "Day 1",
+      "detail": true,
+      "popularSongs": [
+        {
+          "title": "인기곡 A",
+          "album": "앨범 A",
+          "date": "2023-01-10"
+        },
+        {
+          "title": "인기곡 B",
+          "album": "앨범 B",
+          "date": "2023-03-15"
+        }
+      ],
+      "artistInfo": "죠지의 음악을 설명하는 다양한 수식 중 단 하나를 꼽아야 한다면 솔직함'일 겁니다. LO-Fi 질감의 사운드와 꾸밈없는 가사에서 묻어 나오는 죠지의 솔직함은 2010년대 후반의 한국 R&B 씬에서 단연 돋보입니다.\n\n고민 많은 10대 시절, 죠지(본명 이동민)는 아버지의 권유로 음악을 시작했습니다. 소셜 미디어에 자신이 만든 음악을 조금씩 올리던 2014년, 우연히 주영과 효린이 부른 곡 '지워'의 작사에 참여하며 본격적인 활동을 시작했죠. 2017년 CRAFT AND JUN에서 처음으로 발표한 싱글 'Boat'는 유머러스한 뮤직비디오와 담백한 멜로디, 허심탄회하면서도 깊이 있는 가사가 어우러져 그를 주목받는 R&B 신인으로 떠오르 게 했습니다. 이후 김현철의 원곡을 리메이크한 '오랜만에, 방탄소년단 정국이 커버해 화제가 된 감미로운 발라드 바라봐줘요! 등은 간결하면서도 울림이 있는 그의 음악을 대표하는 곡으로 자리 잡았습니다.\n\n죠지라는 활동명은 자신이 다니던 영어 학원에서 지어준 영어 이름을 그대로 쓴 것이라고 합니다. 엉뚱해 보이지만 솔직하기도 한 죠지의 이런 모습에서 그가 추구하는 음악이 엿보입니다."
+    },
+    {
+      "id": 9,
+      "title": "STAYC",
+      "subTitle": "스테이씨",
+      "content": "아티스트",
+      "startTime": "17:00",
+      "endTime": "18:30",
+      "img": "/img/artist2.png",
+      "img2": "/img/artist2-1.svg",
+      "day": "Day 1",
+      "detail": true,
+      "popularSongs": [
+        {
+          "title": "인기곡 X",
+          "album": "앨범 X",
+          "date": "2023-02-05"
+        },
+        {
+          "title": "인기곡 Y",
+          "album": "앨범 Y",
+          "date": "2023-05-20"
+        }
+      ],
+      "artistInfo": "STAYC는 수민, 시은, 아이사, 세은, 윤, 재이로 구성된 6인조 KPop 걸그룹입니다.\n- STAYC는 'Star To A Young Culture'의 약자로, ‘젊은 문화를 이끄는 스타’ 라는 뜻을 담고 있습니다.\n-2020년 싱글 'star to a Young Culture'로 데뷔했으며, 그해 단일 앨범 판매량 여성 신인 부문에서 1위를 차지했습니다.\n- 2021년 ‘ASAP’의 히트에 힘입어 그래미가 선정한 ‘떠오르는 한국 아티스트 5’에 선정되었습니다."
+    },
+    {
+      "id": 10,
+      "title": "STANDBY",
+      "content": "",
+      "startTime": "21:30",
+      "endTime": "22:00",
+      "img": "",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": false
+    },
+    {
+      "id": 11,
+      "title": "",
+      "content": "",
+      "startTime": "22:00",
+      "endTime": "24:00",
+      "img": "/img/movie1.svg",
+      "day": "Day 1",
+      "detail": false,
+      "detailOther": false
+    }
+  ]
