@@ -12,9 +12,9 @@ import TotalPage from './pages/NoticePage/TotalPage';
 import NoticePage from './pages/NoticePage/NoticePage';
 import EventPage from './pages/NoticePage/EventPage';
 
-import TimeTable1Page from './pages/PerformancesPage/TimeTable1Page';
-import TimeTable2Page from './pages/PerformancesPage/TimeTable2Page';
-import TimeTable3Page from './pages/PerformancesPage/TimeTable3Page';
+import TimeTable1Page from './pages/TimeTablePage/TimeTable1Page';
+import TimeTable2Page from './pages/TimeTablePage/TimeTable2Page';
+import TimeTable3Page from './pages/TimeTablePage/TimeTable3Page';
 import IntroPage from './pages/Intro/IntroPage';
 
 const App = () => {

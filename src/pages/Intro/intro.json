@@ -1,82 +1,112 @@
 [
     {
       "id": 0,
-      "name": "안재진",
-      "content": "컴퓨터공학과 19",
-      "intro": "안녕하세요 여러분 이번 멋쟁이사자처럼에서 만든 축제 홈 페이지에서 백엔드를 담당한 안재진이라고 합니다. 축제 홈 페이지 많은 사용 부탁드려요~",
-      "part": "BackEnd",
-      "img": ""
+      "name": "손민주",
+      "content": "컴퓨터공학과 20",
+      "role": "멋쟁이사자처럼 11기 운영진",
+      "intro": "안녕하세요, 멋쟁이사자처럼 대표 손민주입니다! 대동제 웹 프로젝트 제작을 맡게 되어 영광입니다. 계속 수정 중이니, 다들 만족스럽게 사용하셨으면 좋겠습니다 :)",
+      "part": "FrontEnd",
+      "img": "/img/intro5.png",
+      "url": "https://github.com/mango606"
     },
     {
       "id": 1,
-      "name": "최유성",
-      "content": "컴퓨터공학과 19",
-      "intro": "안녕하세요 여러분 이번 축제 홈페이지에서 백엔드를 담당한 최유성입니다. 홈페이지 많은 이용 부탁드리고 모두 함께 즐거운 축제 즐겨요!! ",
-      "part": "BackEnd",
-      "img": ""
+      "name": "권순호",
+      "content": "컴퓨터공학과 22",
+      "role": "멋쟁이사자처럼 11기 아기사자",
+      "intro": "이타적인 개발자를 꿈꾸는 권순호 입니다! 이 앱을 통해 더 편하게 축제를 즐기셨으면 좋겠습니다!",
+      "part": "FrontEnd",
+      "img": "/img/intro6.png",
+      "url": "https://github.com/suno-boy"
     },
     {
       "id": 2,
-      "name": "윤채원",
-      "content": "컴퓨터공학과 22",
-      "intro": "안녕하세요! 이번 축제 홈페이지에서 백엔드 담당 윤채원입니다. 축제 즐기시는데 페이지가 많은 도움이 되셨으면 좋겠습니다! 모두 행복한 축제 보내세요~",
-      "part": "BackEnd",
-      "img": ""
+      "name": "심현수",
+      "content": "경제정보통계학부 23",
+      "role": "멋쟁이사자처럼 운영진",
+      "intro": "저희 웹사이트를 통해 축제 일정,공연,부스 등 다양한 정보를 제공 하고 있습니다. 이번 축제가 여러분에게 행복하고 기억에 남는 순간이면 좋겠습니다. 감사합니다!",
+      "part": "FrontEnd",
+      "img": "/img/intro7.png",
+      "url": "https://github.com/memorial0"
     },
     {
       "id": 3,
-      "name": "박서희",
-      "content": "컴퓨터공학과 20",
-      "intro": "안녕하세요 이번 축제 홈페이지에서 백엔드를 담당한 박서희입니다! 모두가 즐겁게 즐기는 축제가 되었으면 좋겠습니다~",
+      "name": "안재진",
+      "role": "멋쟁이사자처럼 11기 운영진",
+      "content": "컴퓨터공학과 19",
+      "intro": "안녕하세요 여러분 이번 멋쟁이사자처럼에서 만든 축제 홈 페이지에서 백엔드를 담당한 안재진이라고 합니다. 축제 홈 페이지 많은 사용 부탁드려요~",
       "part": "BackEnd",
-      "img": ""
+      "img": "/img/intro1.png",
+      "url": "https://github.com/acs0209"
     },
     {
       "id": 4,
-      "name": "심현수",
-      "content": "경제정보통계학부 23",
-      "intro": "저희 웹사이트를 통해 축제 일정,공연,부스 등 다양한 정보를 제공 하고 있습니다. 이번 축제가 여러분에게 행복하고 기억에 남는 순간이면 좋겠습니다. 감사합니다!",
-      "part": "FrontEnd",
-      "img": ""
+      "name": "박서희",
+      "content": "컴퓨터공학과 20",
+      "role": "멋쟁이사자처럼 11기 운영진",
+      "intro": "안녕하세요 이번 축제 홈페이지에서 백엔드를 담당한 박서희입니다! 모두가 즐겁게 즐기는 축제가 되었으면 좋겠습니다~",
+      "part": "BackEnd",
+      "img": "/img/intro2.png",
+      "url": "https://github.com/seohee-P"
     },
     {
       "id": 5,
-      "name": "권순호",
-      "content": "컴퓨터공학과 22",
-      "intro": "이타적인 개발자를 꿈꾸는 권순호 입니다! 이 앱을 통해 더 편하게 축제를 즐기셨으면 좋겠습니다!",
-      "part": "FrontEnd",
-      "img": ""
+      "name": "최유성",
+      "content": "컴퓨터공학과 19",
+      "role": "멋쟁이사자처럼 11기 아기사자",
+      "intro": "안녕하세요 여러분 이번 축제 홈페이지에서 백엔드를 담당한 최유성입니다. 홈페이지 많은 이용 부탁드리고 모두 함께 즐거운 축제 즐겨요!! ",
+      "part": "BackEnd",
+      "img": "/img/intro3.png",
+      "url": "https://github.com/youcastle03"
     },
     {
       "id": 6,
-      "name": "손민주",
-      "content": "컴퓨터공학과 20",
-      "intro": "안녕하세요, 멋쟁이사자처럼입니다! 대동제 웹 프로젝트 제작을 맡게 되어 영광입니다. 다들 만족스럽게 사용하셨으면 좋겠습니다 :)",
-      "part": "FrontEnd",
-      "img": ""
+      "name": "윤채원",
+      "content": "컴퓨터공학과 22",
+      "role": "멋쟁이사자처럼 11기 아기사자",
+      "intro": "안녕하세요! 이번 축제 홈페이지에서 백엔드 담당 윤채원입니다. 축제 즐기시는데 페이지가 많은 도움이 되셨으면 좋겠습니다! 모두 행복한 축제 보내세요~",
+      "part": "BackEnd",
+      "img": "/img/intro4.png",
+      "url": "https://github.com/ChaewonYoon13"
     },
     {
       "id": 7,
       "name": "한경준",
       "content": "컴퓨터공학과 23",
+      "role": "멋쟁이사자처럼 11기 아기사자",
       "intro": "Apple과 디자인을 좋아하는 iOS Developer 한경준입니다. 축제를 즐기는데 웹사이트가 도움이 된다면 좋겠어요!",
       "part": "Design/iOS",
-      "img": ""
+      "img": "/img/intro8.png",
+      "url": "https://github.com/HanGyeongjun"
     },
     {
       "id": 8,
-      "name": "한윤수",
-      "content": "컴퓨터공학과 19",
+      "name": "강원대학교 총학생회",
+      "role": "강원대학교 제56대 ‘상상’ 총학생회",
+      "content": "",
       "intro": "",
       "part": "Special Thanks to",
-      "img": ""
+      "img": "/img/intro11.png",
+      "url": "https://www.instagram.com/knuch_56/"
     },
     {
       "id": 9,
-      "name": "이상엽",
+      "name": "한윤수",
+      "role": "멋쟁이사자처럼 11기 아기사자",
       "content": "컴퓨터공학과 19",
       "intro": "",
       "part": "Special Thanks to",
-      "img": ""
+      "img": "/img/intro9.png",
+      "url": "https://github.com/HanYoonSoo"
+    },
+    {
+      "id": 10,
+      "name": "이상엽",
+      "role": "멋쟁이사자처럼 운영진",
+      "content": "컴퓨터공학과 19",
+      "intro": "",
+      "part": "Special Thanks to",
+      "img": "/img/intro10.png",
+      "url": "https://github.com/cstria0106"
     }
   ]
