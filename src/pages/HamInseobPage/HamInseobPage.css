@@ -1,0 +1,82 @@
+.ham-container {
+  width: 100vw;
+  height: calc(100vw * (851 / 393));  /* 비율 유지 */
+  object-fit: fill;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-content {
+  width: 88vw;
+  height: auto;
+  background-color: transparent;
+  color: white;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.id-title-container {
+  height: 4rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.description-list {
+  background-color: rgb(255, 255, 255, 0.12);
+  border-radius: 20px;
+  list-style: none;
+  padding: 1rem;
+  font-size: 0.8rem;
+  list-style-type: disc;
+}
+
+.description-list li {
+  margin-left: 1rem;
+}
+
+.id-circle {
+  color: #8A61BF;
+  background-color: #eee;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.6rem;
+}
+
+.location-container {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.location-box {
+  border: 1px solid white;
+  padding: 5px 10px;
+  display: flex;
+  border-radius: 27px;
+  font-size: 0.8rem;
+}
+
+.location-item {
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 27px;
+  font-size: 0.8rem;
+  margin-right: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
