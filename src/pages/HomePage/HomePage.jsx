@@ -40,7 +40,7 @@ const calculateDateDifference = (targetDate) => {
 const HomePage = () => {
   useEffect(() => {
     if (!isMobile()) {
-      alert('이 페이지는 모바일 접속을 권장합니다.');
+      alert('이 페이지는 모바일 접속을 권장합니다. 모든 기능이 제한됩니다.');
     }
   }, []);
 

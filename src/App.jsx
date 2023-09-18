@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from "react-router-dom";
+import { BrowserView, MobileView } from 'react-device-detect'
 import './App.css';
 import './styles/Button.css';
 
@@ -84,8 +85,37 @@ const App = () => {
 
   return (
     <div className="App">
-      {/*<BrowserView>모바일을 통해 접속해주시기 바랍니다.</BrowserView>
-      <MobileView></MobileView>*/}
+      <BrowserView>
+        {circles.map((circle, index) => (
+          <div
+            className="circle"
+            style={{
+              width: `${circle.size}px`,
+              height: `${circle.size}px`,
+              left: `${circle.x}px`,
+              top: `${circle.y}px`,
+              animation: `moveCircle ${circle.animationDuration} linear infinite`, // 애니메이션 적용
+              backgroundColor: circle.color, // 랜덤 색상 적용
+            }}
+            key={index}
+            onAnimationEnd={() => handleAnimationEnd(index)}
+          ></div>
+        ))}
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/stadium' element={<HomePage />} />  {/* 대운동장 */}
+          <Route path='/60th' element={<HomePage />} />  {/* 60주념기념관 */}
+          <Route path='/haminseob' element={<HomePage />} />  {/* 함인섭광장 */}
+          <Route path='/timetable/day1' element={<HomePage />} />  {/* 공연 */}
+          <Route path='/timetable/day2' element={<HomePage />} />  {/* 공연 */}
+          <Route path='/timetable/day3' element={<HomePage />} />  {/* 공연 */}
+          <Route path='/guestbook' element={<HomePage />} />  {/* 방명록 */}
+          <Route path='/total' element={<HomePage />} />  {/* 공지사항 */}
+          <Route path='/intro' element={<HomePage />} />  {/* 개발자 소개 */}
+        </Routes>
+      </BrowserView>
+
+      <MobileView>
       {circles.map((circle, index) => (
         <div
           className="circle"
@@ -115,6 +145,7 @@ const App = () => {
         <Route path='/event' element={<EventPage />} />  {/* 공지사항 */}
         <Route path='/intro' element={<IntroPage />} />  {/* 개발자 소개 */}
       </Routes>
+      </MobileView>
     </div>
   );
 };

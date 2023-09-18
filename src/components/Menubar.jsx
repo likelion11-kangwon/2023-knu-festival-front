@@ -26,7 +26,7 @@ const Menubar = () => {
           <li><Link to="/haminseob">함인섭광장</Link></li>
           <li><Link to="/60th">60주념기념관</Link></li>
           <li><Link to="/guestbook">방명록</Link></li>
-          <li><Link to="/notice">공지사항</Link></li>
+          <li><Link to="/total">공지사항</Link></li>
         </ul>
       </div>
     </div>
