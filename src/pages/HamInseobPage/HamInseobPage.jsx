@@ -14,11 +14,7 @@ const HamInseobPage = () => {
   const openModal = (id) => {
     // "rect" 문자열을 제거하고 남은 부분을 숫자로 변환
     const numId = parseInt(id.replace('rect', ''), 10);
-
-    console.log("Converted ID:", numId); // 변환된 ID 값 출력
-
     const content = hamData.find(data => data.id === numId);
-    console.log("Found content:", content); // 찾아진 내용 출력
 
     if (content) {
         setModalContent(content);
@@ -76,7 +72,7 @@ const HamInseobPage = () => {
         style={customStyles}    
       >
         <div className="intro-container">
-          <span className="notice-header">{modalContent && modalContent.title}</span>
+          <span className="notice-header">함인섭광장</span>
         </div>
         <div className="close-icon-box" onClick={closeModal}>
           <HiOutlineX />

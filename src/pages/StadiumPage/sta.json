@@ -1,0 +1,703 @@
+[
+    {
+      "id": "0",
+      "place": "0",
+      "title": "오디너리선샤인",
+      "team": "오디너리선샤인",
+      "description": "푸딩 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free",
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "1",
+      "place": "1-좌",
+      "title": "대학생 농부들의 리얼 포레스트 : 농사직썰",
+      "team": "농사직썰",
+      "description": "미니게임",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "1-2",
+      "place": "1-우",
+      "title": "농.미.래",
+      "team": "농촌미래연구회",
+      "description": "떡메치기 체험 & 인절미 시식",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "2-1",
+      "place": "2-좌",
+      "title": "RCY(RedCross Youth)",
+      "team": "RCY",
+      "description": "팝콘, 영수증 사진기",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "팝콘 : 1,000원, 영수증 사진기 : 500원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "2-2",
+      "place": "2-우",
+      "title": "MUZI Vintage",
+      "team": "무지빈티지",
+      "description": "빈티지 의류 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "1~3만원대"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "3-1",
+      "place": "3-좌",
+      "title": "환상의 부스 빛길랜드로~",
+      "team": "빛길",
+      "description": "캠페인, 퀴즈",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "3-2",
+      "place": "3-우",
+      "title": "젠지 선수를 이겨라!",
+      "team": "곰둘-E",
+      "description": "LCK 게임, 폴라로이드 사진 촬영",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "4-1",
+      "place": "4-좌",
+      "title": "포티포티",
+      "team": "포티포티",
+      "description": "베이커리 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "감자화폐 : 1,700원, 동물3종 쿠키 : 1,000원 등"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "4-2",
+      "place": "4-우",
+      "title": "걸음 스테이끼 하우스",
+      "team": "걸음's테이크",
+      "description": "큐브 스테이크 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "큐브 스테이크 : 6,900원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "5-1",
+      "place": "5-좌",
+      "title": "RMPC",
+      "team": "RMPC",
+      "description": "음악 재생 및 이벤트",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "5-2",
+      "place": "5-우",
+      "title": "Nur위한 Drink & Tattoo",
+      "team": "완연 학생회",
+      "description": "수혈팩 음료 & 타투스티커 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "음료1잔 + 타투 스티커 1종 : 3,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "6-1",
+      "place": "6-좌",
+      "title": "놀러와요 권익의 숲",
+      "team": "학생권익위원회",
+      "description": "퀴즈 게임, 에이드 무료 제공",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "6-2",
+      "place": "6-우",
+      "title": "CHITCHAT!",
+      "team": "CHITCHAT!",
+      "description": "공예품 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "5,000원 ~ 15,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "7-1",
+      "place": "7-좌",
+      "title": "뭉개장터",
+      "team": "뭉개구름",
+      "description": "퀴즈, 목줄 만들기 체험, 엽서 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "엽서 장 당 1,500원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "7-2",
+      "place": "7-우",
+      "title": "노랑상점",
+      "team": "수지예요",
+      "description": "자체제작 상품 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "카드지갑 7,000원 등"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "8-1",
+      "place": "8-좌",
+      "title": "나도 티(TEA)팔이 좀 해보자~~",
+      "team": "사마르칸트",
+      "description": "티와 할랄 음식 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "얼그레이티 : 2,500원, 닭꼬치 : 3,000원 등"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "8-2",
+      "place": "8-우",
+      "title": "사랑의 권총을 겨눠라!! 빵야! 빵야!",
+      "team": "한마음선교회",
+      "description": "미니게임",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "9-1",
+      "place": "9-좌",
+      "title": "그리너블",
+      "team": "그리너블",
+      "description": "오브제 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "3,500원~9,500원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "9-2",
+      "place": "9-우",
+      "title": "Pair chocolate",
+      "team": "페어초콜릿",
+      "description": "초콜릿 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "14,900원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "10",
+      "place": "10-좌,우",
+      "title": "단과대학대전",
+      "team": "단과대학대전",
+      "description": "턱걸이, 고군분투, 데시벨 측정, 축구공 제기차기",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "11",
+      "place": "11-좌,우",
+      "title": "KNU 굿즈 배부",
+      "team": "KNU 굿즈 배부",
+      "description": "KNU 굿즈 판매 및 배부",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "12",
+      "place": "12-좌,우",
+      "title": "총학생회 본부",
+      "team": "총학생회 본부",
+      "description": "다양한 곰두리 타투",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "13-1",
+      "place": "13-좌",
+      "title": "강타투",
+      "team": "강타투",
+      "description": "타투프린팅 및 타투스티커 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "타투스티커 3,000원 등"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "13-2",
+      "place": "13-우",
+      "title": "너의 이름은2",
+      "team": "너의 이름은2",
+      "description": "매칭게임",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "개인 소지품 : 0원, 블록 : 1,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "14-1",
+      "place": "14-좌",
+      "title": "대패가 먹고 싶을 만두",
+      "team": "최준홍과 김나래",
+      "description": "대패삼겹살, 군만두 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "단품 : 5,500원, 탄산음료세트 : 6,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "14-2",
+      "place": "14-우",
+      "title": "곰지컬100",
+      "team": "헬스하는 곰두리",
+      "description": "데드리프트 대회",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "15-1",
+      "place": "15-좌",
+      "title": "올해도 돌아온 떡삼",
+      "team": "JDM",
+      "description": "떡꼬치삼겹살 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "떡삼2,500원, 떡삼 콤보 5,000원 등"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "15-2",
+      "place": "15-우",
+      "title": "감요사때",
+      "team": "밀탱크우유",
+      "description": "감자요구르트 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "2,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "16-1",
+      "place": "16-좌",
+      "title": "내가 만든 국희",
+      "team": "피치시에 베이커리",
+      "description": "베이커리 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "황치즈휘낭시에 : 4,000원 등"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "16-2",
+      "place": "16-우",
+      "title": "아찔보이즈 X 초록우산",
+      "team": "아찔보이즈",
+      "description": "실크 스크린 기법 제작 의류 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "반팔 : 2,000원, 긴팔 : 2,500원 등"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "17-1",
+      "place": "17-좌",
+      "title": "학생홍보대사 가온",
+      "team": "가온",
+      "description": "게임 진행",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "17-2",
+      "place": "17-우",
+      "title": "가치보는 가치봄",
+      "team": "인지해",
+      "description": "가치봄 소개 및 울림제 홍보",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "18-1",
+      "place": "18-좌",
+      "title": "시크릿 쥬주얼리",
+      "team": "개똥이네",
+      "description": "주얼리,띠부씰 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "10,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "18-2",
+      "place": "18-우",
+      "title": "우리다누리 행복충전소",
+      "team": "국제청소년연합 IYF",
+      "description": "풍선 다트, 커피",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "Free"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "19-1",
+      "place": "19-좌",
+      "title": "KUSA",
+      "team": "KUSA",
+      "description": "자체제작 키링, 팔찌 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "키링 : 4,000원 등"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "19-2",
+      "place": "19-우",
+      "title": "이제는 더 이상 물러날 곳이 없다",
+      "team": "현진스",
+      "description": "엽서, 팔찌 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "엽서 1장 : 1,500원 등, 팔지 : 8,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "20-1",
+      "place": "20-좌",
+      "title": "탕비실",
+      "team": "탕비실 직원들",
+      "description": "탕후루 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "3,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "20-2",
+      "place": "20-우",
+      "title": "B212's CupCake",
+      "team": "B212",
+      "description": "컴케이크 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "3,500원 / 4,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "21-1",
+      "place": "21-좌",
+      "title": "러시 & 후루",
+      "team": "4-H",
+      "description": "탕후루, 슬러시, 반려동물 간식 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "3,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "21-2",
+      "place": "21-우",
+      "title": "타로 시그널",
+      "team": "타로 시그널",
+      "description": "타로카드 상담",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "3,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "22-1",
+      "place": "22-좌",
+      "title": "제피",
+      "team": "제피",
+      "description": "가죽제품 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "50,000원 이상"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "22-2",
+      "place": "22-우",
+      "title": "윈드베인",
+      "team": "윈드베인",
+      "description": "일러스트",
+      "date": "9.19(화)",
+      "location": ["대운동장", "1일차"],
+      "price" : "7,000원(이벤트 참여시 5,000원)"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "22-2",
+      "place": "22-우",
+      "title": "요거참",
+      "team": "요거참",
+      "description": "요거트류 판매",
+      "date": "9.20(수) ~ 9.21(목)",
+      "location": ["대운동장", "2일차", "3일차"],
+      "price" : "4,900원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "23-1",
+      "place": "23-좌",
+      "title": "귀지네",
+      "team": "귀지네",
+      "description": "캐릭터 일러스트",
+      "date": "9.19(화), 9.21(목)",
+      "location": ["대운동장", "1일차", "3일차"],
+      "price" : "2,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "23-1",
+      "place": "23-좌",
+      "title": "몽글리",
+      "team": "몽글리",
+      "description": "비누, 캔들 판매",
+      "date": "9.20(수) ~ 9.21(목)",
+      "location": ["대운동장", "2일차", "3일차"],
+      "price" : "5,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "23-2",
+      "place": "23-우",
+      "title": "언니의공예방",
+      "team": "언니의공예방",
+      "description": "생화악세서리 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "15,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "23-2",
+      "place": "23-우",
+      "title": "하람",
+      "team": "하람",
+      "description": "패브릭 소품 판매",
+      "date": "9.21(목)",
+      "location": ["대운동장", "3일차"],
+      "price" : "8,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "24-1",
+      "place": "24-좌",
+      "title": "아퀴스튜디오",
+      "team": "아퀴스튜디오",
+      "description": "터프팅 굿즈 (키링, 그립톡, 러그 등) 판매",
+      "date": "9.19(화)",
+      "location": ["대운동장", "1일차"],
+      "price" : "15,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "24-1",
+      "place": "24-좌",
+      "title": "서비네핸드메이드",
+      "team": "서비네핸드메이드",
+      "description": "코바늘 소품 판매",
+      "date": "9.20(수)",
+      "location": ["대운동장", "2일차"],
+      "price" : "10,000원 ~ 15,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "24-1",
+      "place": "24-좌",
+      "title": "작심",
+      "team": "작심",
+      "description": "일러스트",
+      "date": "9.19(화), 9.21(목)",
+      "location": ["대운동장", "1일차", "3일차"],
+      "price" : "7,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "24-2",
+      "place": "24-우",
+      "title": "너티퍼피",
+      "team": "너티퍼피",
+      "description": "일러스트",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "2,000원 ~ 9,900원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "25-1",
+      "place": "25-좌",
+      "title": "스링",
+      "team": "스링",
+      "description": "액세서리 판매",
+      "date": "9.19(화), 9.21(목)",
+      "location": ["대운동장", "1일차", "3일차"],
+      "price" : "55,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "25-1",
+      "place": "25-좌",
+      "title": "리미리본",
+      "team": "리미리본",
+      "description": "헤어리본핀 판매",
+      "date": "9.20(수)",
+      "location": ["대운동장", "2일차"],
+      "price" : "6,000원 ~ 7,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "25-2",
+      "place": "25-우",
+      "title": "도담메이드",
+      "team": "도담메이드",
+      "description": "패브릭 소품",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "S : 3,900원, M : 5,900원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "26-1",
+      "place": "26-좌",
+      "title": "해피홀리데이마켓",
+      "team": "해피홀리데이마켓",
+      "description": "액세서리 판매",
+      "date": "9.19(화) ~ 9.21(목)",
+      "location": ["대운동장", "1일차", "2일차", "3일차"],
+      "price" : "14,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "26-1",
+      "place": "26-좌",
+      "title": "귀지네",
+      "team": "귀지네",
+      "description": "액세서리 판매",
+      "date": "9.19(화), 9.21(목)",
+      "location": ["대운동장", "1일차", "3일차"],
+      "price" : "2,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "26-2",
+      "place": "26-우",
+      "title": "작심",
+      "team": "작심",
+      "description": "일러스트",
+      "date": "9.19(화), 9.21(목)",
+      "location": ["대운동장", "1일차", "3일차"],
+      "price" : "7,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "26-2",
+      "place": "26-우",
+      "title": "준수비즈",
+      "team": "준수비즈",
+      "description": "비즈 공예품 판매",
+      "date": "9.20(수)",
+      "location": ["대운동장", "2일차"],
+      "price" : "5,000원 , 2,000원"
+    ,
+      "img": "/img/noImg.png"
+    },
+    {
+      "id": "26-2",
+      "place": "26-우",
+      "title": "오월공간",
+      "team": "오월공간",
+      "description": "레진",
+      "date": "9.21(목)",
+      "location": ["대운동장", "3일차"],
+      "price" : "15,000원"
+    ,
+      "img": "/img/noImg.png"
+    }
+]

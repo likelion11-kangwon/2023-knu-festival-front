@@ -22,7 +22,7 @@
 }
 
 .id-title-container {
-  height: 4rem;
+  height: auto;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -55,7 +55,8 @@
 
 .location-container {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.2rem;
+  margin-left: 0.2rem;
 }
 
 .location-box {
@@ -71,7 +72,7 @@
   padding: 5px 10px;
   border-radius: 27px;
   font-size: 0.8rem;
-  margin-right: 0.2rem;
+  margin-right: 0.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
