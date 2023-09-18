@@ -1,7 +1,4 @@
-const dummyStadiumData = [
-  {
-    "place: 대운동장": {
-      "data": [
+[
         {
           "id": "1",
           "place": "1-좌",
@@ -584,9 +581,5 @@ const dummyStadiumData = [
           "price": "?",
           "date": "9.20(수) ~ 9.21(목)"
         }
-      ]
-    }
-  }
-];
+]
 
-export {dummyStadiumData};
