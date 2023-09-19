@@ -190,6 +190,16 @@
       "img": "/img/noImg.png"
     },
     {
+      "id": "7",
+      "team": "",
+      "title": "-",
+      "comment": "",
+      "description": "금일 운영하지 않음.",
+      "date" : "19일",
+      "location": ["60주년기념관", "1일차"],
+      "img": "/img/noImg.png"
+    },
+    {
       "id": "18",
       "team": "감자아일랜드",
       "title": "감자아일랜드",
