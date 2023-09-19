@@ -50,7 +50,7 @@ const HomePage = () => {
     return mobileKeywords.some(keyword => window.navigator.userAgent.includes(keyword));
   };
 
-  const targetDate = new Date(2023, 8, 19, 23, 59, 59); // 월-1
+  const targetDate = new Date(2023, 8, 20); // 월-1
   const dateDifference = calculateDateDifference(targetDate);
   const [showButton, setShowButton] = useState(false);
   const listRef = useRef(null);
@@ -159,7 +159,7 @@ const HomePage = () => {
       <div className='centered-copy'>
         <div className='about-makers fade-item' style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold' }}>About Makers</div>
         <Link to="/intro" className='likelion-btn fade-item' style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold' }}>멋쟁이사자처럼 강원대학교 <IoIosArrowForward style={{ width: '2rem' }}/></Link>
-        <SvgBottomLogo className="bottom-logo" width="17rem" height="6rem"/>
+        <SvgBottomLogo className="bottom-logo" width="12rem" height="4rem"/>
         <div className='copyright'>Copyright 2023. LIKELION KNU all rights reserved.</div>
       </div>
       {showButton && (

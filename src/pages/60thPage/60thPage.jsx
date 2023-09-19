@@ -18,10 +18,6 @@ const SixtiethPage = () => {
 
   const filteredContents = selectedDay ? modalContents.filter(content => content.location.includes(selectedDay)) : modalContents;
 
-  useEffect(() => {
-    alert('정보 업데이트 중입니다. 이용 시 유의 바랍니다.');
-  }, []);
-
   const openModal = (id) => {
     const rawId = id.replace('rect', '');
     console.log("Clicked ID:", id);
@@ -87,7 +83,7 @@ const SixtiethPage = () => {
         style={customStyles}    
       >
         <div className="intro-container">
-          <span className="notice-header">대운동장</span>
+          <span className="notice-header">60주념기념관</span>
           <div className="filter-buttons">
             <div className="sta-category">
             {allDays.map(day => (
@@ -126,10 +122,17 @@ const SixtiethPage = () => {
                   </div>
                   {content.description && (
                       <ul className="description-list">
-                          {content.team && <li>종류: {content.team}</li>}  {/* 종류 추가 */}
+                          {content.team && <li>(종류) {content.team}</li>}  {/* 종류 추가 */}
                           {Array.isArray(content.description) ? content.description.map(description => (
                               <li key={description}>{description}</li>
                           )) : <li>{content.description}</li>}
+                      </ul>
+                  )}
+                  {content.price && (
+                      <ul className="description-list">
+                          {Array.isArray(content.price) ? content.price.map(price => (
+                              <li key={price}>{price}</li>
+                          )) : <li>{content.price}</li>}
                       </ul>
                   )}
               </React.Fragment>
