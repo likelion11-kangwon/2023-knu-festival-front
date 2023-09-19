@@ -12,6 +12,9 @@ import SvgBottomLogo from '../../components/BottomLogo';
 import { IoIosArrowForward } from 'react-icons/io';
 import { IoIosArrowUp } from 'react-icons/io';
 
+const MOBILE_KEYWORDS = ['Android', 'iPhone', 'iPod', 'iPad', 'Windows Phone', 'Blackberry'];
+const TARGET_DATE = new Date(2023, 8, 20);
+
 const calculateDateDifference = (targetDate) => {
   // 서울의 현재 날짜와 시간
   const seoulTimeZoneOffset = 9 * 60; // UTC+9
@@ -38,90 +41,57 @@ const calculateDateDifference = (targetDate) => {
 };
 
 const HomePage = () => {
-  useEffect(() => {
-    if (!isMobile()) {
-      alert('이 페이지는 모바일 접속을 권장합니다. 모든 기능이 제한됩니다.');
-    }
-  }, []);
-
-  const isMobile = () => {
-    // 모바일 기기 정의
-    const mobileKeywords = ['Android', 'iPhone', 'iPod', 'iPad', 'Windows Phone', 'Blackberry'];
-    return mobileKeywords.some(keyword => window.navigator.userAgent.includes(keyword));
-  };
-
-  const targetDate = new Date(2023, 8, 20); // 월-1
-  const dateDifference = calculateDateDifference(targetDate);
   const [showButton, setShowButton] = useState(false);
   const listRef = useRef(null);
 
   useEffect(() => {
-    const currentList = listRef.current; // 로컬 변수에 저장
-  
-    const handleScroll = () => {
-      if (currentList && currentList.scrollTop > 100) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-  
-    if (currentList) {
-      currentList.addEventListener('scroll', handleScroll, { passive: true });
+    if (!isMobile()) {
+      alert('이 페이지는 모바일 접속을 권장합니다. 모든 기능이 제한됩니다.');
     }
-  
-    return () => {
-      if (currentList) {
-        currentList.removeEventListener('scroll', handleScroll);
-      }
-    };
-  }, []);
-  
 
-  // 하단에 애니메이션 적용
-  useEffect(() => {
-    const currentList = listRef.current; // 로컬 변수에 저장
-  
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in');
-          observer.unobserve(entry.target); // 관찰 중지
-        }
-      });
-    }, {
-      threshold: 1.0
-    });
-  
-    const mapObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in');
-          mapObserver.unobserve(entry.target); // 관찰 중지
-        }
-      });
-    }, {
-      threshold: 0.15
-    });
-  
-    if (currentList) {
-      const listItems = currentList.querySelectorAll('.fade-item:not(.map)');
-      listItems.forEach(item => observer.observe(item));
-  
-      const mapItems = currentList.querySelectorAll('.map');
-      mapItems.forEach(item => mapObserver.observe(item));
-    }
-  
+    const currentList = listRef.current;
+    const handleScroll = () => {
+      setShowButton(currentList.scrollTop > 100);
+    };
+    currentList.addEventListener('scroll', handleScroll, { passive: true });
+
+    // IntersectObservers initialization
+    const initObserver = (threshold, selector) => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold });
+
+      const items = currentList.querySelectorAll(selector);
+      items.forEach(item => observer.observe(item));
+
+      return observer;
+    };
+
+    const normalObserver = initObserver(1.0, '.fade-item:not(.map)');
+    const mapObserver = initObserver(0.15, '.map');
+
     return () => {
-      if (currentList) {
-        const listItems = currentList.querySelectorAll('.fade-item:not(.map)');
-        listItems.forEach(item => observer.unobserve(item));
-  
-        const mapItems = currentList.querySelectorAll('.map');
-        mapItems.forEach(item => mapObserver.unobserve(item));
-      }
+      currentList.removeEventListener('scroll', handleScroll);
+
+      // IntersectObservers removal
+      const items = currentList.querySelectorAll('.fade-item:not(.map)');
+      items.forEach(item => normalObserver.unobserve(item));
+
+      const mapItems = currentList.querySelectorAll('.map');
+      mapItems.forEach(item => mapObserver.unobserve(item));
     };
   }, []);
+
+  const isMobile = () => {
+    return MOBILE_KEYWORDS.some(keyword => window.navigator.userAgent.includes(keyword));
+  };
+
+  const dateDifference = calculateDateDifference(TARGET_DATE);
 
   return (
     <article ref={listRef}>
@@ -164,11 +134,11 @@ const HomePage = () => {
       </div>
       {showButton && (
         <div 
-          className="go-top-btn" 
-          onClick={() => listRef.current.scrollTo({top: 0, behavior: 'smooth'})}
-        >
-          <IoIosArrowUp color="white" size="1.6rem"/>
-        </div>
+        className={`go-top-btn ${showButton ? 'visible' : ''}`} 
+        onClick={() => listRef.current.scrollTo({top: 0, behavior: 'smooth'})}
+      >
+        <IoIosArrowUp color="white" size="1.6rem"/>
+      </div>
       )}
     </article>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, memo } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { BrowserView, MobileView } from 'react-device-detect'
 import './App.css';
