@@ -99,7 +99,7 @@ const App = () => {
     } // 처음에 실행될 때만 10개를 생성
 
     return () => {};
-  }, []);
+  }, [circles.length]);
 
   return (
     <div className="App">
