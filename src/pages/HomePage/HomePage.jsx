@@ -129,7 +129,7 @@ const HomePage = () => {
       <div className='centered-copy'>
         <div className='about-makers fade-item' style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold' }}>About Makers</div>
         <Link to="/intro" className='likelion-btn fade-item' style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold' }}>멋쟁이사자처럼 강원대학교 <IoIosArrowForward style={{ width: '2rem' }}/></Link>
-        <SvgBottomLogo className="bottom-logo" width="12rem" height="4rem"/>
+        <SvgBottomLogo className="bottom-logo" width="10rem" height="4.2rem"/>
         <div className='copyright'>Copyright 2023. LIKELION KNU all rights reserved.</div>
       </div>
       {showButton && (
