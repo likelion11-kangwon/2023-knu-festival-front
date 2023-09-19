@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback, memo } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { BrowserView, MobileView } from 'react-device-detect'
 import './App.css';
@@ -17,6 +17,24 @@ import TimeTable1Page from './pages/TimeTablePage/TimeTable1Page';
 import TimeTable2Page from './pages/TimeTablePage/TimeTable2Page';
 import TimeTable3Page from './pages/TimeTablePage/TimeTable3Page';
 import IntroPage from './pages/Intro/IntroPage';
+
+// 움직이는 원 컴포넌트 분리
+const AnimatedCircle = memo(({ circle, onEnd }) => {
+  return (
+    <div
+      className="circle"
+      style={{
+        width: `${circle.size}px`,
+        height: `${circle.size}px`,
+        left: `${circle.x}px`,
+        top: `${circle.y}px`,
+        animation: `moveCircle ${circle.animationDuration} linear infinite`,
+        backgroundColor: circle.color,
+      }}
+      onAnimationEnd={onEnd}
+    ></div>
+  );
+});
 
 const App = () => {
   const [circles, setCircles] = useState([]);
@@ -81,55 +99,39 @@ const App = () => {
     } // 처음에 실행될 때만 10개를 생성
 
     return () => {};
-  }, [circles.length]);
+  }, []);
 
   return (
     <div className="App">
       <BrowserView>
         {circles.map((circle, index) => (
-          <div
-            className="circle"
-            style={{
-              width: `${circle.size}px`,
-              height: `${circle.size}px`,
-              left: `${circle.x}px`,
-              top: `${circle.y}px`,
-              animation: `moveCircle ${circle.animationDuration} linear infinite`, // 애니메이션 적용
-              backgroundColor: circle.color, // 랜덤 색상 적용
-            }}
+          <AnimatedCircle 
+            circle={circle} 
+            onEnd={() => handleAnimationEnd(index)} 
             key={index}
-            onAnimationEnd={() => handleAnimationEnd(index)}
-          ></div>
+          />
         ))}
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/stadium' element={<HomePage />} />  {/* 대운동장 */}
-          <Route path='/60th' element={<HomePage />} />  {/* 60주념기념관 */}
-          <Route path='/haminseob' element={<HomePage />} />  {/* 함인섭광장 */}
-          <Route path='/timetable/day1' element={<HomePage />} />  {/* 공연 */}
-          <Route path='/timetable/day2' element={<HomePage />} />  {/* 공연 */}
-          <Route path='/timetable/day3' element={<HomePage />} />  {/* 공연 */}
-          <Route path='/guestbook' element={<HomePage />} />  {/* 방명록 */}
-          <Route path='/total' element={<HomePage />} />  {/* 공지사항 */}
-          <Route path='/intro' element={<HomePage />} />  {/* 개발자 소개 */}
+          <Route path='/stadium' element={<HomePage />} />
+          <Route path='/60th' element={<HomePage />} />
+          <Route path='/haminseob' element={<HomePage />} />
+          <Route path='/timetable/day1' element={<HomePage />} />
+          <Route path='/timetable/day2' element={<HomePage />} />
+          <Route path='/timetable/day3' element={<HomePage />} />
+          <Route path='/guestbook' element={<HomePage />} />
+          <Route path='/total' element={<HomePage />} />
+          <Route path='/intro' element={<HomePage />} />
         </Routes>
       </BrowserView>
 
       <MobileView>
       {circles.map((circle, index) => (
-        <div
-          className="circle"
-          style={{
-            width: `${circle.size}px`,
-            height: `${circle.size}px`,
-            left: `${circle.x}px`,
-            top: `${circle.y}px`,
-            animation: `moveCircle ${circle.animationDuration} linear infinite`, // 애니메이션 적용
-            backgroundColor: circle.color, // 랜덤 색상 적용
-          }}
+        <AnimatedCircle 
+          circle={circle} 
+          onEnd={() => handleAnimationEnd(index)} 
           key={index}
-          onAnimationEnd={() => handleAnimationEnd(index)}
-        ></div>
+        />
       ))}
       <Routes>
         <Route path='/' element={<HomePage />} />  {/* 홈 */}
