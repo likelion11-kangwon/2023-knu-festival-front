@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Modal from 'react-modal';
 import Menubar from '../../components/Menubar';
 import './60thPage.css';
