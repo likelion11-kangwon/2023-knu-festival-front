@@ -1,6 +1,5 @@
 import React, { useEffect, useState, memo } from 'react';
 import { Routes, Route } from "react-router-dom";
-import { BrowserView, MobileView } from 'react-device-detect'
 import './App.css';
 import './styles/Button.css';
 
@@ -101,16 +100,42 @@ const App = () => {
     return () => {};
   }, [circles.length]);
 
+  const isPCView = () => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth >= 500;
+    }
+    return false;
+  };
+
+  const [viewMode, setViewMode] = useState(isPCView() ? 'browser' : 'mobile');
+
+  useEffect(() => {
+    if (viewMode === 'browser') {
+      alert('이 페이지는 모바일 접속을 권장합니다. 모든 기능이 제한됩니다.');
+    }
+
+    const resizeListener = () => {
+      setViewMode(isPCView() ? 'browser' : 'mobile');
+    };
+
+    window.addEventListener('resize', resizeListener);
+    
+    return () => {
+      window.removeEventListener('resize', resizeListener);
+    };
+  }, [viewMode]);
+
   return (
     <div className="App">
-      <BrowserView>
-        {circles.map((circle, index) => (
-          <AnimatedCircle 
-            circle={circle} 
-            onEnd={() => handleAnimationEnd(index)} 
-            key={index}
-          />
-        ))}
+      {circles.map((circle, index) => (
+        <AnimatedCircle 
+          circle={circle} 
+          onEnd={() => handleAnimationEnd(index)} 
+          key={index}
+        />
+      ))}
+
+      {viewMode === 'browser' ? (
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/stadium' element={<HomePage />} />
@@ -123,31 +148,22 @@ const App = () => {
           <Route path='/total' element={<HomePage />} />
           <Route path='/intro' element={<HomePage />} />
         </Routes>
-      </BrowserView>
-
-      <MobileView>
-      {circles.map((circle, index) => (
-        <AnimatedCircle 
-          circle={circle} 
-          onEnd={() => handleAnimationEnd(index)} 
-          key={index}
-        />
-      ))}
-      <Routes>
-        <Route path='/' element={<HomePage />} />  {/* 홈 */}
-        <Route path='/stadium' element={<StadiumPage />} />  {/* 대운동장 */}
-        <Route path='/60th' element={<SixtiethPage />} />  {/* 60주념기념관 */}
-        <Route path='/haminseob' element={<HamInseobPage />} />  {/* 함인섭광장 */}
-        <Route path='/timetable/day1' element={<TimeTable1Page />} />  {/* 공연 */}
-        <Route path='/timetable/day2' element={<TimeTable2Page />} />  {/* 공연 */}
-        <Route path='/timetable/day3' element={<TimeTable3Page />} />  {/* 공연 */}
-        <Route path='/guestbook' element={<GuestbookPage />} />  {/* 방명록 */}
-        <Route path='/notice' element={<NoticePage />} />  {/* 공지사항 */}
-        <Route path='/total' element={<TotalPage />} />  {/* 공지사항 */}
-        <Route path='/event' element={<EventPage />} />  {/* 공지사항 */}
-        <Route path='/intro' element={<IntroPage />} />  {/* 개발자 소개 */}
-      </Routes>
-      </MobileView>
+      ) : (
+        <Routes>
+          <Route path='/' element={<HomePage />} />  {/* 홈 */}
+          <Route path='/stadium' element={<StadiumPage />} />  {/* 대운동장 */}
+          <Route path='/60th' element={<SixtiethPage />} />  {/* 60주념기념관 */}
+          <Route path='/haminseob' element={<HamInseobPage />} />  {/* 함인섭광장 */}
+          <Route path='/timetable/day1' element={<TimeTable1Page />} />  {/* 공연 */}
+          <Route path='/timetable/day2' element={<TimeTable2Page />} />  {/* 공연 */}
+          <Route path='/timetable/day3' element={<TimeTable3Page />} />  {/* 공연 */}
+          <Route path='/guestbook' element={<GuestbookPage />} />  {/* 방명록 */}
+          <Route path='/notice' element={<NoticePage />} />  {/* 공지사항 */}
+          <Route path='/total' element={<TotalPage />} />  {/* 공지사항 */}
+          <Route path='/event' element={<EventPage />} />  {/* 공지사항 */}
+          <Route path='/intro' element={<IntroPage />} />  {/* 개발자 소개 */}
+        </Routes>
+      )}
     </div>
   );
 };

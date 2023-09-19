@@ -12,7 +12,6 @@ import SvgBottomLogo from '../../components/BottomLogo';
 import { IoIosArrowForward } from 'react-icons/io';
 import { IoIosArrowUp } from 'react-icons/io';
 
-const MOBILE_KEYWORDS = ['Android', 'iPhone', 'iPod', 'iPad', 'Windows Phone', 'Blackberry'];
 const TARGET_DATE = new Date(2023, 8, 20);
 
 const calculateDateDifference = (targetDate) => {
@@ -45,10 +44,6 @@ const HomePage = () => {
   const listRef = useRef(null);
 
   useEffect(() => {
-    if (!isMobile()) {
-      alert('이 페이지는 모바일 접속을 권장합니다. 모든 기능이 제한됩니다.');
-    }
-
     const currentList = listRef.current;
     const handleScroll = () => {
       setShowButton(currentList.scrollTop > 100);
@@ -86,10 +81,6 @@ const HomePage = () => {
       mapItems.forEach(item => mapObserver.unobserve(item));
     };
   }, []);
-
-  const isMobile = () => {
-    return MOBILE_KEYWORDS.some(keyword => window.navigator.userAgent.includes(keyword));
-  };
 
   const dateDifference = calculateDateDifference(TARGET_DATE);
 
