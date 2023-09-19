@@ -38,7 +38,7 @@ const GuestbookPage = () => {
   useEffect(() => {
     const fetchGuestbookEntries = async () => {
       try {
-        const response = await axios.get(`/api/guestbook/pageList?page=${currentPage}`);
+        const response = await axios.get(`http://49.50.172.190:8080/api/guestbook/pageList?page=${currentPage}`);
         setEntries(response.data.content);
         setTotalPages(response.data.totalPages); 
       } catch (error) {
@@ -50,7 +50,7 @@ const GuestbookPage = () => {
   }, [currentPage, axios]);
 
   const Pagination = () => {
-    const MAX_VISIBLE_PAGES = 2;
+    const MAX_VISIBLE_PAGES = 5;
     const firstVisiblePage = Math.floor(currentPage / MAX_VISIBLE_PAGES) * MAX_VISIBLE_PAGES;
     const pages = [...Array(Math.min(totalPages - firstVisiblePage, MAX_VISIBLE_PAGES)).keys()].map(i => i + firstVisiblePage);
   
