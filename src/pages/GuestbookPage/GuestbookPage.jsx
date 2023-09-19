@@ -38,7 +38,7 @@ const GuestbookPage = () => {
   useEffect(() => {
     const fetchGuestbookEntries = async () => {
       try {
-        const response = await axios.get(`http://49.50.172.190:8080/api/guestbook/pageList?page=${currentPage}`);
+        const response = await axios.get(`/api/guestbook/pageList?page=${currentPage}`);
         setEntries(response.data.content);
         setTotalPages(response.data.totalPages); 
       } catch (error) {
