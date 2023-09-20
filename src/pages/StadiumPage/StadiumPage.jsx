@@ -56,9 +56,10 @@ const StadiumPage = () => {
 
   useEffect(() => {
     const handlePopState = (e) => {
-      if (isModalOpen) {
+      if (isModalOpen || isListModalOpen) { // 여기를 수정하였습니다.
         e.preventDefault();
         closeModal();
+        closeListModal(); // 이 부분도 추가하였습니다.
       }
     };
 
@@ -68,10 +69,11 @@ const StadiumPage = () => {
       // 컴포넌트 언마운트 시 이벤트 리스너 제거
       window.removeEventListener('popstate', handlePopState);
     };
-  }, [isModalOpen]);
+}, [isModalOpen, isListModalOpen]);
 
   const openListModal = () => {
     setIsListModalOpen(true);
+    window.history.pushState(null, null, window.location.pathname);
   };
   
   const closeListModal = () => {
@@ -136,7 +138,7 @@ const StadiumPage = () => {
       <div className="notice-board">
         <div className="notice-container">
           <span className="notice-header">대운동장</span>
-          <img src="/img/noList.svg" alt="리스트 전체 보기" style={{width: '4.8rem', height: '4.8rem'}} onClick={openListModal}/>
+          <img src="/img/noList.svg" alt="리스트 전체 보기" style={{width: '4.8rem', height: '4.8rem'}} onClick={closeListModal}/>
         </div>
 
         <ul className="notice-board">
