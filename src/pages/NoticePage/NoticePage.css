@@ -1,5 +1,5 @@
 .notice-board {
-  margin: 0;
+  margin: 0 0 1rem 0;
   padding: 0;
 }
 
@@ -8,7 +8,7 @@
   color: white;
 }
 
-.entries {
+.notice-entries {
   width: 100vw;
   height: auto;
   display: flex;
@@ -18,7 +18,7 @@
   max-height: calc(100vh - 32vh);
 }
 
-.guestbook-entry {  
+.notice-entry {  
   width: 82%;
   height: auto;
   background-color: #ffffff1f;
@@ -50,8 +50,8 @@
 }
 
 .category {
-  margin-left: 5%;
-  width: 90%;
+  margin-left: 4%;
+  width: 92%;
   text-align: center;  /* 버튼들을 수평 중앙에 배치 */
   background-color: rgb(255, 255, 255, 0.12);
   border-radius: 40px;

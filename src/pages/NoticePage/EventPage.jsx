@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Menubar from '../../components/Menubar';
 import './NoticePage.css';
 import Modal from 'react-modal';
+import Pagination from '../../components/Pagination';
 import { useAxios } from '../../libs/axios';
 import { HiOutlineX } from 'react-icons/hi';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
@@ -15,21 +16,24 @@ const EventPage = () => {
   const [notices, setNotices] = useState([]);
   const [selectedNotice, setSelectedNotice] = useState(null);
   const location = useLocation();
+  const [currentPage, setCurrentPage] = useState(0); 
+  const [totalPages, setTotalPages] = useState(0);
   
   const axios = useAxios();
 
   useEffect(() => {
     const fetchNoticeList = async () => {
       try {
-        const response = await axios.get('/api/list/events');
+        const response = await axios.get(`/api/list/events?page=${currentPage}`);
         setNotices(response.data.content);
+        setTotalPages(response.data.totalPages);
       } catch (error) {
         console.error('API 호출 중 오류 발생:', error);
       }
     };
 
     fetchNoticeList();
-  }, [axios]);
+  }, [currentPage, axios]);
 
   const openModal = (notice) => {
     setSelectedNotice(notice);
@@ -97,8 +101,8 @@ const EventPage = () => {
       <ul className={`notice-board ${selectedNotice ? 'hidden' : ''}`}>
         {notices.map((notice) => (
           <li key={notice.noticeId}>
-            <div className="entries">
-            <div className="guestbook-entry" onClick={() => openModal(notice)}>
+            <div className="notice-entries">
+            <div className="notice-entry" onClick={() => openModal(notice)}>
               <div className="entry-notice-info">
                 <p className="entry-notice-title" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', fontSize: '1.1rem' }}>{notice.title}</p>
                 <p className="entry-notice-date" style={{ fontFamily: 'Pretendard-Medium', fontWeight: '500', fontSize: '0.8rem', color: '#9CA3A9' }}>
@@ -110,6 +114,7 @@ const EventPage = () => {
           </li>
         ))}
       </ul>
+      <Pagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} />
       {/* <div className='centered-guest'>
         <SvgBottomLogo className="bottom-logo-com" width="10rem" height="2rem"/>
         <div className='copyright-com'>Copyright 2023. LIKELION KNU all rights reserved.</div>

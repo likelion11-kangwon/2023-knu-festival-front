@@ -1,0 +1,21 @@
+/* 페이지 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .pagination .active {
+    background-color: rgb(255, 255, 255, 0.24);
+    border-radius: 50%;
+    padding: 5px 10px;
+  }
