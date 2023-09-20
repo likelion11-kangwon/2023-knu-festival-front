@@ -95,7 +95,7 @@
       "startTime": "20:30",
       "endTime": "21:00",
       "img": "/img/artist1.png",
-      "img2": "/img/artist1-1.svg",
+      "img2": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/artist1-1.svg",
       "day": "Day 1",
       "detail": true,
       "popularSongs": [
@@ -120,7 +120,7 @@
       "startTime": "21:00",
       "endTime": "21:30",
       "img": "/img/artist2.png",
-      "img2": "/img/artist2-1.svg",
+      "img2": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/artist2-1.svg",
       "day": "Day 1",
       "detail": true,
       "popularSongs": [
