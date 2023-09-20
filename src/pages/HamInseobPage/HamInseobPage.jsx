@@ -11,6 +11,7 @@ const HamInseobPage = () => {
   const [modalContents, setModalContents] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDay, setSelectedDay] = useState('1일차');  // 현재 선택된 '일차'
+  const [isListModalOpen, setIsListModalOpen] = useState(false);
 
   const allDays = Array.from(new Set(hamData.flatMap(data => {
     const locations = Array.isArray(data.location) ? data.location : [data.location];
@@ -69,6 +70,14 @@ const HamInseobPage = () => {
     };
   }, [isModalOpen]);
 
+  const openListModal = () => {
+    setIsListModalOpen(true);
+  };
+  
+  const closeListModal = () => {
+    setIsListModalOpen(false);
+  };
+
   const customStyles = {
     content: {
       top: '0',
@@ -95,17 +104,72 @@ const HamInseobPage = () => {
 
   return (
     <article>
-      {!isModalOpen && <Menubar />}
-      {!isModalOpen && (
-        <SvgHam 
+      {!isModalOpen && !isListModalOpen &&
+      <>
+      <div className="overlay-content">
+        <div className="notice-container">
+          <span className="notice-header">함인섭광장</span>
+          <img src="/img/list.svg" alt="리스트 전체 보기" style={{width: '4.8rem', height: '4.8rem'}} onClick={openListModal}/>
+          <div className="menu-bar-container">
+            <Menubar />
+          </div>
+        </div>
+      </div>
+
+      <SvgHam 
           onClick={(e) => {
-            if (e.target.id.startsWith("rect")) {
-              openModal(e.target.id);
-            }
+              if (e.target.id.startsWith("rect")) {
+                  openModal(e.target.id);
+              }
           }} 
           className="ham-container"
-        />
-      )}
+      />
+      </>
+      }
+
+      <Modal
+        isOpen={isListModalOpen}
+        onRequestClose={closeListModal}
+        contentLabel="List Modal Content"
+        style={customStyles}
+      >
+        <div className="notice-board">
+          <div className="notice-container">
+            <span className="notice-header">함인섭광장</span>
+            <img src="/img/noList.svg" alt="리스트 전체 보기" style={{width: '4.8rem', height: '4.8rem'}} onClick={openListModal}/>
+          </div>
+
+          <ul className="notice-board">
+            {hamData.map((content, idx) => (
+              <li key={idx} onClick={() => { openModal(content.id); closeListModal(); }}>
+                <div className="notice-entries">
+                  <div className="notice-entry">
+                    <div className="entry-notice-info">
+                      <div className="id-title-container" style={{ fontFamily: 'Pretendard-Bold', fontWeight: 'bold', height: '2.6rem' }}>
+                            <p className="id-circle">{content.id.includes('-') ? content.id.split('-')[0] : content.id}</p>
+                            <p style={{ fontSize: '1.4rem' }}>{content.title}</p>
+                      </div>
+                      <div className="location-container" style={{ fontFamily: 'Pretendard', marginTop: '0.4rem', marginLeft: '0.6rem' }}>
+                            {Array.isArray(content.location) ? (
+                                content.location.map((loc, index) => (
+                                    <div key={index} className="location-item">{loc}</div>
+                                ))
+                            ) : (
+                                <div className="location-box">{content.location}</div>
+                            )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          <div className="close-icon-box" onClick={closeListModal}>
+            <HiOutlineX />
+          </div>
+        </div>
+      </Modal>
     
       <Modal
         isOpen={isModalOpen}
@@ -114,7 +178,9 @@ const HamInseobPage = () => {
         style={customStyles}    
       >
         <div className="intro-container">
-          <span className="notice-header">함인섭광장</span>
+          <div className="notice-container">
+            <span className="notice-header">함인섭광장</span>
+          </div>
           <div className="filter-buttons">
             <div className="sta-category">
             {allDays.map(day => (

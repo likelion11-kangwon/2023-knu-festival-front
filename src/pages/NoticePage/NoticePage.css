@@ -90,7 +90,11 @@
   .notice-container {
     width: 100vw;
     height: 4rem;
-    padding-top: 2rem;
+    padding-top: 0.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
   }
   
   .blur-box {
