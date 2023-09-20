@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from 'react-modal';
 import Menubar from '../../components/Menubar';
 import './60thPage.css';
@@ -19,6 +19,12 @@ const SixtiethPage = () => {
   const filteredContents = selectedDay ? modalContents.filter(content => content.location.includes(selectedDay)) : modalContents;
 
   const openModal = (id) => {
+    // 현재 화면의 가로 크기를 체크
+    if (window.innerWidth > 500) {
+      alert("이 기기로는 접근할 수 없습니다.");
+      return; // 이 부분을 통해 모달창 여는 로직이 실행되지 않습니다.
+    }
+    
     const rawId = id.replace('rect', '');
     console.log("Clicked ID:", id);
     // rawId가 숫자만 포함하는지 확인하여 해당 값을 numId에 할당
@@ -31,12 +37,36 @@ const SixtiethPage = () => {
       setModalContents(relatedContents);
       setIsModalOpen(true);
     }
+
+    if (relatedContents.length > 0) {
+      setModalContents(relatedContents);
+      setIsModalOpen(true);
+      
+      // 히스토리 항목 추가
+      window.history.pushState(null, null, window.location.pathname);
+    }
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedDay('1일차');  // 모달을 닫을 때 "1일차"로 리셋
   };
+
+  useEffect(() => {
+    const handlePopState = (e) => {
+      if (isModalOpen) {
+        e.preventDefault();
+        closeModal();
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      // 컴포넌트 언마운트 시 이벤트 리스너 제거
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [isModalOpen]);
 
   const customStyles = {
     content: {

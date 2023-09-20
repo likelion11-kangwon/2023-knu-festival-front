@@ -1,6 +1,6 @@
   .perfo-category {
-    margin-left: 7%;
-    width: 86%;
+    margin-left: 10%;
+    width: 80%;
     text-align: center;  /* 버튼들을 수평 중앙에 배치 */
     background-color: rgb(255, 255, 255, 0.12);
     border-radius: 40px;
@@ -10,7 +10,7 @@
   .perfo-category button {
     display: inline-block; /* 각 버튼을 inline-block 요소로 만들어서 줄바꿈 없이 나열될 수 있게 합니다. */
     margin: 0 0.2rem; /* 버튼 간 간격 (선택 사항) */
-    padding: 0.2rem 1.9rem;
+    padding: 0.2rem 1.4rem;
     background: none;
     border-radius: 40px;
     border: none;

@@ -45,7 +45,7 @@
   .sta-category button {
     display: inline-block; /* 각 버튼을 inline-block 요소로 만들어서 줄바꿈 없이 나열될 수 있게 합니다. */
     margin: 0 0.2rem; /* 버튼 간 간격 (선택 사항) */
-    padding: 0.2rem 1.9rem;
+    padding: 0.2rem 1.6rem;
     background: none;
     border-radius: 40px;
     border: none;
