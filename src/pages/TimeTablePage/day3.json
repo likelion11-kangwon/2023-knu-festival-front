@@ -74,6 +74,7 @@
       "endTime": "21:30",
       "img": "/img/artist5.png",
       "img2": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/artist5-1.svg",
+      "img3": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/loveMusic.svg",
       "day": "Day 3",
       "detail": true,
       "detailOther": false,
@@ -100,6 +101,7 @@
       "endTime": "22:00",
       "img": "/img/artist6.png",
       "img2": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/artist6-1.svg",
+      "img3": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/bibiMusic.svg",
       "day": "Day 3",
       "detail": true,
       "detailOther": false,
@@ -126,6 +128,7 @@
       "endTime": "22:30",
       "img": "/img/artist7.png",
       "img2": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/artist7-1.svg",
+      "img3": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/bol4Music.svg",
       "day": "Day 3",
       "detail": true,
       "popularSongs": [

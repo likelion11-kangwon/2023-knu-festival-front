@@ -147,12 +147,8 @@ const TimeTable1Page = () => {
               <img src={selectedFestival.img2} alt={selectedFestival.title} width="100%"/>
               <div className='detail-box'>
                   <h2>아티스트 인기곡</h2>
-                  (업데이트 중)
-                  {/* {selectedFestival.popularSongs.map((song, index) => (
-                    <div key={index}>
-                      {song.title} - {song.album} ({song.date})
-                    </div>
-                  ))} */}
+                  <img src={selectedFestival.img3} alt={selectedFestival.title} width="100%"/>
+                  
                   <h2>아티스트 미리 듣기</h2>
                   (업데이트 중)
                   <h2>아티스트 정보</h2>

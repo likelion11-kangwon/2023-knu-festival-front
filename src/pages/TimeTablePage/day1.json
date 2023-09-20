@@ -96,6 +96,7 @@
       "endTime": "21:00",
       "img": "/img/artist1.png",
       "img2": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/artist1-1.svg",
+      "img3": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/georgeMusic.svg",
       "day": "Day 1",
       "detail": true,
       "popularSongs": [
@@ -121,6 +122,7 @@
       "endTime": "21:30",
       "img": "/img/artist2.png",
       "img2": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/artist2-1.svg",
+      "img3": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/staycMusic.svg",
       "day": "Day 1",
       "detail": true,
       "popularSongs": [
