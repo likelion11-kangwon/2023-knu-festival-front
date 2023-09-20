@@ -1,8 +1,19 @@
+.guestbook-article {
+  /* For Chrome, Safari, and Opera */
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* For Internet Explorer and Edge */
+  -ms-overflow-style: none; 
+}
+
 /* 방명록 기본 화면 */
 .guestbook-container {
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 6.4rem;
   padding-top: 1.8rem;
   padding-bottom: 0.8rem;
@@ -28,7 +39,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
 }
 
 .centered-container {
@@ -43,7 +53,7 @@
   align-items: center;
   justify-content: center;
 
-  width: 92%;
+  width: 93%;
   height: 3.6rem;
 
   background-color: rgb(138, 97, 191, 0.6);
@@ -69,8 +79,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: scroll;
-  max-height: calc(100vh - 32vh);
+  overflow-y: visible;
 }
 
 .guestbook-entry {  
@@ -117,32 +126,11 @@
   margin-top: 0.4rem;
 }
 
-/* 페이지 스타일 */
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pagination button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin: 0 5px;
-  color: white;
-  font-size: 0.9rem;
-}
-
-.pagination .active {
-  background-color: rgb(255, 255, 255, 0.24);
-  border-radius: 50%;
-  padding: 5px 10px;
-}
-
 .guestbook-bottom {
   width: 100%;
-  height: 10rem;
-  margin-top: -0.5rem;
+  height: 3rem;
+  bottom: 0;
+  margin-top: 1rem;
 }
 
 .centered-guest {
@@ -156,7 +144,7 @@
   align-content: center;
   align-items: center;
 
-  margin-top: -23rem;
+  margin-top: -20rem;
 }
 
 
@@ -258,11 +246,4 @@
   .submit:disabled {
       background-color: rgb(156, 163, 169, 0.6);
       cursor: not-allowed;
-  }
-
-  @media (min-width: 1020px) {
-    .centered-button {
-      width: 91%;
-      margin-right: 3%;
-    }
   }

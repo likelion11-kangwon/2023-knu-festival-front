@@ -3,12 +3,12 @@ import Menubar from '../../components/Menubar';
 import './GuestbookPage.css';
 import GuestbookEntry from './GuestbookEntry';
 import Modal from 'react-modal';
-import { HiOutlineChevronRight } from 'react-icons/hi';
+import Pagination from "../../components/Pagination";
 import { HiOutlineX } from 'react-icons/hi';
 import { IoIosAdd } from 'react-icons/io';
 import { IoIosArrowRoundUp } from 'react-icons/io';
 import { useAxios } from "../../libs/axios";
-import SvgBottomLogo from '../../components/BottomLogo';
+// import SvgBottomLogo from '../../components/BottomLogo';
 import userImg1 from './user-img1.png';
 import userImg2 from './user-img2.png';
 import userImg3 from './user-img3.png';
@@ -48,38 +48,6 @@ const GuestbookPage = () => {
 
     fetchGuestbookEntries();
   }, [currentPage, axios]);
-
-  const Pagination = () => {
-    const MAX_VISIBLE_PAGES = 5;
-    const firstVisiblePage = Math.floor(currentPage / MAX_VISIBLE_PAGES) * MAX_VISIBLE_PAGES;
-    const pages = [...Array(Math.min(totalPages - firstVisiblePage, MAX_VISIBLE_PAGES)).keys()].map(i => i + firstVisiblePage);
-  
-    return (
-      <div className="pagination" style={{ fontFamily: 'Pretendard-Bold'}}>
-        {firstVisiblePage > 0 && (
-          <button onClick={() => setCurrentPage(firstVisiblePage - 1)}>
-            <HiOutlineX />
-          </button>
-        )}
-  
-        {pages.map(page => (
-          <button 
-            key={page} 
-            onClick={() => setCurrentPage(page)}
-            className={currentPage === page ? 'active' : ''}
-          >
-            {page + 1}
-          </button>
-        ))}
-  
-        {firstVisiblePage + MAX_VISIBLE_PAGES < totalPages && (
-          <button onClick={() => setCurrentPage(firstVisiblePage + MAX_VISIBLE_PAGES)}>
-            <HiOutlineChevronRight />
-          </button>
-        )}
-      </div>
-    );
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -154,7 +122,7 @@ const GuestbookPage = () => {
   return (
     <article className="guestbook-article">
       {modalIsOpen ? null : <Menubar />}
-      <div  style={{ display: modalIsOpen ? 'none' : 'block' }}>
+      <div style={{ display: modalIsOpen ? 'none' : 'block' }}>
         <div className="guestbook-container">
           <span className="page-title">방명록</span>
           <div className="centered-container">
@@ -164,6 +132,7 @@ const GuestbookPage = () => {
           </div>
           <div className="blur-background"></div>
         </div>
+
         <div className="guestbook-entries">
             <div className="entries">
               {entries.map((entry, index) => (
@@ -172,12 +141,13 @@ const GuestbookPage = () => {
             </div>
         </div>
         <div className="guestbook-bottom">
-          <Pagination />
+          <Pagination currentPage={currentPage} totalPages={totalPages} setCurrentPage={setCurrentPage} />
         </div>
-        <div className='centered-guest'>
+
+        {/* <div className='centered-guest'>
           <SvgBottomLogo className="bottom-logo-com" width="10rem" height="2rem"/>
         <div className='copyright-com'>Copyright 2023. LIKELION KNU all rights reserved.</div>
-        </div>
+        </div> */}
       </div>
       <Modal
         isOpen={modalIsOpen}
