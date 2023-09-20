@@ -7,42 +7,42 @@
       "포토존"
     ],
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham0.jpg"
   },
   {
     "id": "1",
     "title": "강원 그린바이오",
     "description": "우수 제품 특별 판매전",
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham1.jpg"
   },
   {
     "id": "2",
     "title": "강원 그린바이오",
     "description": "우수 제품 특별 판매전",
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham1.jpg"
   },
   {
     "id": "3",
     "title": "강원 그린바이오",
     "description": "우수 제품 특별 판매전",
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham1.jpg"
   },
   {
     "id": "4",
     "title": "NH 농협은행 후평동지점",
     "description": ["꽝 없는 뽑기 이벤트", "NH 농협은행 채용 설명회", "LED 팔찌 증정"],
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham4.jpg"
   },
   {
     "id": "5",
     "title": "한국환경공단 강원환경본부",
     "description": "한국환경공단 행사 홍보",
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham5.jpg"
   },
   {
     "id": "5",
@@ -63,14 +63,14 @@
     "title": "산학협력주간",
     "description": ["산학협력 수학능력시험 및 기념품 지급", "메이커 체험형 부스 운영", "대학협력협의회 홍보 및 미니게임"],
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham6.jpg"
   },
   {
     "id": "7",
     "title": "산학협력주간",
     "description": ["산학협력 수학능력시험 및 기념품 지급", "메이커 체험형 부스 운영", "대학협력협의회 홍보 및 미니게임"],
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham7.jpg"
   },
   {
     "id": "8",
@@ -84,28 +84,28 @@
     "title": "산학협력주간",
     "description": ["산학협력 수학능력시험 및 기념품 지급", "메이커 체험형 부스 운영", "대학협력협의회 홍보 및 미니게임"],
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham9.jpg"
   },
   {
     "id": "10",
     "title": "정보화본부",
     "description": ["대학 주요 정보서비스 체험", "기념품 증정"],
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham10.jpg"
   },
   {
     "id": "11",
     "title": "춘천시",
     "description": ["전입장려금 신천 안내 및 게임", "춘천시 행복알리미 및 유튜브 안내", "기념품 증정"],
     "location": ["함인섭광장", "1일차", "2일차", "3일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham11.jpg"
   },
   {
     "id": "12",
     "title": "발전기금 바자회",
     "description": ["소중한 당신의 나눔이 기부가 됩니다.", "ms마트 및 대학 창업보육센터 입주기업 후원물품, 중고물품 판매"],
     "location": ["함인섭광장", "1일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham12.jpg"
   },
   {
     "id": "12",
@@ -119,7 +119,7 @@
     "title": "발전기금 바자회",
     "description": ["소중한 당신의 나눔이 기부가 됩니다.", "ms마트 및 대학 창업보육센터 입주기업 후원물품, 중고물품 판매"],
     "location": ["함인섭광장", "1일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham12.jpg"
   },
   {
     "id": "13",
@@ -140,7 +140,7 @@
     "title": "발전기금 바자회",
     "description": ["소중한 당신의 나눔이 기부가 됩니다.", "ms마트 및 대학 창업보육센터 입주기업 후원물품, 중고물품 판매"],
     "location": ["함인섭광장", "1일차"],
-    "img": "/img/noImg.png"
+    "img": "/img/ham12.jpg"
   },
   {
     "id": "14",
