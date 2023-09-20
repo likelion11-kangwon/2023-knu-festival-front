@@ -1,5 +1,5 @@
 import React, { useEffect, useState, memo } from 'react';
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 import './styles/Button.css';
 
@@ -38,8 +38,6 @@ const AnimatedCircle = memo(({ circle, onEnd }) => {
 const App = () => {
   const [circles, setCircles] = useState([]);
   const maxCircleCount = 10; // 최대 원 개수
-
-  const location = useLocation();
 
   // 원하는 색상만 선택하도록 수정
   const getRandomColor = () => {
