@@ -161,10 +161,15 @@ const TimeTable3Page = () => {
             {/* detailOther modal */}
             {selectedFestivalType === "detailOther" && (
             <div style={{ fontFamily: 'Pretendard'}}>
-              <h2>{selectedFestival.title}</h2>
-              <div>(업데이트 중)</div>
+            <div className="notice-container">
+              <span className="notice-header">{selectedFestival.title}</span>
             </div>
-          )}
+            <h2 className="perfo-detail-tilte">일정 안내</h2>
+            <div className="perfo-detail">
+              <img className="perfo-img" src={selectedFestival.img2} alt={selectedFestival.title} width="100%"/>
+            </div>
+          </div>
+        )}
 
             </div>
           )}

@@ -49,7 +49,7 @@
       "content": "",
       "startTime": "18:00",
       "endTime": "20:30",
-      "img": "",
+      "img2": "/img/detail3.png",
       "day": "Day 3",
       "detail": false,
       "detailOther": true
@@ -60,7 +60,7 @@
       "content": "",
       "startTime": "20:30",
       "endTime": "21:00",
-      "img": "",
+      "img2": "/img/detail5.png",
       "day": "Day 3",
       "detail": false,
       "detailOther": true
@@ -74,7 +74,7 @@
       "endTime": "21:30",
       "img": "/img/artist5.png",
       "img2": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/artist5-1.svg",
-      "img3": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/loveMusic.svg",
+      "img3": "/img/loveMusic.svg",
       "day": "Day 3",
       "detail": true,
       "detailOther": false,

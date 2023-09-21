@@ -151,3 +151,20 @@
   .detail-box h2{
     color: white;
   }
+
+  .perfo-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .perfo-img {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .perfo-detail-tilte {
+    margin-left: 1.4rem;
+  }

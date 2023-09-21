@@ -49,7 +49,7 @@
       "content": "",
       "startTime": "18:00",
       "endTime": "19:30",
-      "img": "",
+      "img2": "/img/detail1.png",
       "day": "Day 2",
       "detail": false,
       "detailOther": true
@@ -58,10 +58,10 @@
       "id": 5,
       "title": "OK! 토크콘서트",
       "subTitle":"옥지호교수님",
-      "content": "토크콘서트",
+      "content": "",
       "startTime": "19:30",
       "endTime": "20:00",
-      "img": "",
+      "img2": "/img/detail6.png",
       "day": "Day 2",
       "detail": false,
       "detailOther": true
@@ -72,7 +72,7 @@
       "content": "",
       "startTime": "20:00",
       "endTime": "21:30",
-      "img": "",
+      "img2": "/img/detail2.png",
       "day": "Day 2",
       "detail": false,
       "detailOther": true
