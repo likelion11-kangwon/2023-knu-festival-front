@@ -161,7 +161,7 @@ const TimeTable1Page = () => {
                       <img src="/img/music3.svg" alt="img 3" />
                     </a>
                     <a href={selectedFestival.apple} target="_blank" rel="noopener noreferrer">
-                      <img src="/img/music4.svg" alt="img 4" />
+                      <img src="/img/Music4.svg" alt="img 4" />
                     </a>
                   </div>
                   <h2>아티스트 정보</h2>
