@@ -12,7 +12,7 @@ import SvgBottomLogo from '../../components/BottomLogo';
 import { IoIosArrowForward } from 'react-icons/io';
 import { IoIosArrowUp } from 'react-icons/io';
 
-const TARGET_DATE = new Date(2023, 8, 21, 0, 0, 0);
+const TARGET_DATE = new Date(2023, 8, 20, 0, 0, 0);
 
 const calculateDateDifference = (targetDate) => {
   // 서울의 현재 날짜와 시간
