@@ -90,18 +90,10 @@
       "day": "Day 2",
       "detail": true,
       "detailOther": false,
-      "popularSongs": [
-        {
-          "title": "인기곡 A",
-          "album": "앨범 A",
-          "date": "2023-01-10"
-        },
-        {
-          "title": "인기곡 B",
-          "album": "앨범 B",
-          "date": "2023-03-15"
-        }
-      ],
+      "melon": "https://kko.to/hhP3A-TEY5",
+      "youtube": "https://music.youtube.com/channel/UCBXNRYFBNNMHwArbYK3N4eg?si=DPN5zadsikrQBrj1",
+      "spotify": "https://spotify.link/kkyYaHQ49Cb",
+      "apple": "https://music.apple.com/kr/artist/김나영/533032420",
       "artistInfo": "깊은 목소리의 보컬리스트 김나영은 고전적인 발라드의 매력을 전달하는 아티스트입니다."
     },
     {
@@ -116,18 +108,10 @@
       "img3": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/grboyMusic.svg",
       "day": "Day 2",
       "detail": true,
-      "popularSongs": [
-        {
-          "title": "인기곡 A",
-          "album": "앨범 A",
-          "date": "2023-01-10"
-        },
-        {
-          "title": "인기곡 B",
-          "album": "앨범 B",
-          "date": "2023-03-15"
-        }
-      ],
+      "melon": "https://kko.to/TGs5pM15Ko",
+      "youtube": "https://music.youtube.com/channel/UCMRvw9TUJB5m32YPrxLu7ag?si=uL7eV1KYaBexQaof",
+      "spotify": "https://spotify.link/TK6zckM49Cb",
+      "apple": "https://music.apple.com/kr/artist/기리보이/500855532",
       "artistInfo": "기리보이는 한국 힙합 아티스트 중에도 손꼽히는 창작욕을 가졌습니다. 2011년 싱글 You Look So Good To Me'로 데뷔 후 많은 작품을 발매했고, 여러 레이블의 컴필레이션 앨범과 방송 활동, 의류 브랜드 런칭 등을 병행하며 부지런히 움직였죠. 2018년에는 스윙스와 공동으로 힙합 레이블 “WEDAPLUGG Records'를 설립했습니다.\n\n기리보이는 많은 작품만큼이나 다양한 스타일을 선보입니다. 초반에는 20대 남녀가 겪을 법한 연애담을 주제로 어눌한 톤의 랩과 보컬, 지질한 감성을 내세운 부드러운 음악을 내세웠습니다. '치명적인 앨범'과 '육감적인 앨범’, '성인식' 등이 이 시기에 발매된 작품이죠. 자신의 음악 정체성을 어느 정도 정립한 후에는 발라드, 일렉트로닉 등 여러 장르에서 받은 영향을 음 악에 녹여냅니다. '기계적인 앨범'에서는 힙합에 퓨처 베이스를 접목하고, KGVOVC from Wybh, Vol. 1에서는 트랩 비트에 일렉트로닉 하우스를 얹는 등, 작품의 성격에 맞춰 끊임없이 새로운 음악적 시도를 하고 있습니다."
     }
   ]

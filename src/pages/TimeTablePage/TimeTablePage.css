@@ -168,3 +168,9 @@
   .perfo-detail-tilte {
     margin-left: 1.4rem;
   }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+  }

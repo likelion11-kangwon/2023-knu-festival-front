@@ -78,18 +78,10 @@
       "day": "Day 3",
       "detail": true,
       "detailOther": false,
-      "popularSongs": [
-        {
-          "title": "인기곡 A",
-          "album": "앨범 A",
-          "date": "2023-01-10"
-        },
-        {
-          "title": "인기곡 B",
-          "album": "앨범 B",
-          "date": "2023-03-15"
-        }
-      ],
+      "melon": "https://kko.to/1dzgNwtiu7",
+      "youtube": "https://music.youtube.com/channel/UCblszyLBesuvSST61mLHuzQ?si=JsW6mATIINQ8TI_0",
+      "spotify": "https://spotify.link/APVCTFS49Cb",
+      "apple": "https://music.apple.com/kr/artist/류수정/994621581",
       "artistInfo": ""
     },
     {
@@ -105,18 +97,10 @@
       "day": "Day 3",
       "detail": true,
       "detailOther": false,
-      "popularSongs": [
-        {
-          "title": "인기곡 A",
-          "album": "앨범 A",
-          "date": "2023-01-10"
-        },
-        {
-          "title": "인기곡 B",
-          "album": "앨범 B",
-          "date": "2023-03-15"
-        }
-      ],
+      "melon": "https://kko.to/z_uL3LT6tX",
+      "youtube": "https://music.youtube.com/channel/UCWJKJhxr3a6P_z34eb7rmFw?si=Ovnad7DqqLcOlARs",
+      "spotify": "https://spotify.link/z46BzyU49Cb",
+      "apple": "https://music.apple.com/kr/artist/비비/1444569221",
       "artistInfo": "비비는 타이거 JK와 윤미래의 레이블 FeelGhood Music 소속 아티스트입니다. 음악 예능 프로그램 '더 팬'에서 준우승하며 이름을 알린 그는 2019년 싱글 '비누' 발표 후, 음악에서 예능까지 행보를 이어나가고 있습니다."
     },
     {
@@ -131,18 +115,10 @@
       "img3": "https://myknufestivalbucket.s3.ap-northeast-2.amazonaws.com/artist/bol4Music.svg",
       "day": "Day 3",
       "detail": true,
-      "popularSongs": [
-        {
-          "title": "인기곡 A",
-          "album": "앨범 A",
-          "date": "2023-01-10"
-        },
-        {
-          "title": "인기곡 B",
-          "album": "앨범 B",
-          "date": "2023-03-15"
-        }
-      ],
+      "melon": "https://kko.to/qOQLkCMeiQ",
+      "youtube": "https://music.youtube.com/channel/UCa5qWh5TRLCVFkCO67_gOtw?si=yRHD1Y397fDmy0Km",
+      "spotify": "https://spotify.link/HaRhJsW49Cb",
+      "apple": "https://music.apple.com/kr/artist/볼빨간사춘기/1188975595",
       "artistInfo": "볼빨간사춘기를 세상에 알린 '우주를 줄게'의 성공은 매우 획기적이었습니다. 인디 레이블 소속이면서도 대중의 취향을 완벽하게 사로잡은 곡이었죠. 탁월한 작사, 작곡 능력과 특색있는 목소리로 자신의 이야기를 전하는 볼빨간사춘기는 어쩌면 모두가 기다려온 아티스트였는지도 모릅니다.\n\n2014년 한 오디션 프로그램에 4인조로 등장한 볼빨 간사춘기는 TOP 10에 오르지 못한 채 아쉽게 탈락했습니다. 그로부터 2년 후, 안지영, 우지윤 듀오로 재 편성한 볼빨간사춘기는 첫 정규 앨범 'RED PLANET'을 발매합니다. 귀를 사로잡는 세련된 멜로 디의 타이틀곡 우주를 줄게'는 조용히 입소문을 타며 국내 음원차트 1위를 석권하는 쾌거를 거두죠. 오직 좋은 음악의 힘만으로 메이저 아티스트로 도약하게 된 이들은 2017년 골든디스크 신인상과 한국대중음악상 올해의 노래' 부문을 수상하며 그 성과를 입증합니다.\n\n볼빨간사춘기의 음악은 마음을 움직이는 노랫말과 귓가에 맴도는 멜로디로 많은 이들의 공감을 이끌어내 며 꾸준히 대중의 사랑을 받았고, 이후 이들은 더 힘차게 날아올랐습니다. 2017년 EP 'Red Diary, Page. 1에 수록된 '썸 탈꺼야, '나의 사춘기에게'를 시작으로 '나만, 봄, '별 보러 갈래?, '워커홀릭' 등 매번 발매 동시에 차트를 석권하며 당대 최고 인기 아티스트로 자리매김하죠. 2020년 4월, 볼빨간사춘기는 멤버 우지윤의 탈퇴로 변화를 맞이합니다. 안지영의 솔로 프로젝트로 전환된 볼빨간사춘기는 이후 밴드가 아닌 싱어송라이터로서 활동을 이어가고 있습니다."
     },
     {

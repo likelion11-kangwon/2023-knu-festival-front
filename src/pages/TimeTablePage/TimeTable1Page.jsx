@@ -150,7 +150,20 @@ const TimeTable1Page = () => {
                   <img src={selectedFestival.img3} alt={selectedFestival.title} width="100%"/>
                   
                   <h2>아티스트 미리 듣기</h2>
-                  (업데이트 중)
+                  <div className="image-container">
+                    <a href={selectedFestival.melon} target="_blank" rel="noopener noreferrer">
+                      <img src="/img/music1.svg" alt="Description 1" />
+                    </a>
+                    <a href={selectedFestival.youtube} target="_blank" rel="noopener noreferrer">
+                      <img src="/img/music2.svg" alt="Description 2" />
+                    </a>
+                    <a href={selectedFestival.spotify} target="_blank" rel="noopener noreferrer">
+                      <img src="/img/music3.svg" alt="Description 3" />
+                    </a>
+                    <a href={selectedFestival.apple} target="_blank" rel="noopener noreferrer">
+                      <img src="/img/music4.svg" alt="Description 4" />
+                    </a>
+                  </div>
                   <h2>아티스트 정보</h2>
                   <div style={{ whiteSpace: "pre-line" }}>{selectedFestival.artistInfo}</div>
                 </div>
